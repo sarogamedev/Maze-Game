@@ -8,22 +8,27 @@ public class GameManager : MonoBehaviour
 
 	[Range(1, 1000)] public int height;
 	
+	public static GameManager instance;
+	
 	// Awake is called when the script instance is being loaded.
 	private void Awake()
 	{
-		DontDestroyOnLoad(gameObject);
+		instance = this;
+		SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Additive);
 	}
 	
 	public void GenerateNewMaze(int wid, int ht)
 	{
 		width = wid;
 		height = ht;
-        SceneManager.LoadScene("MainScene");
+		SceneManager.UnloadSceneAsync("MainMenu");
+		SceneManager.LoadSceneAsync("MainScene", LoadSceneMode.Additive);
 	}
     
 	public void LoadMainMenu()
 	{
-		SceneManager.LoadScene("MainMenu");
+		SceneManager.UnloadSceneAsync("MainScene");
+		SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Additive);
 	}
 
     public void ExitApplication()
@@ -31,18 +36,5 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
     
-	public void Menu(GameObject obj)
-	{
-		obj.SetActive(true);
-	}
 	
-	public void CloseMenu(GameObject obj)
-	{
-		LeanTween.scale(obj, Vector3.zero, 0.2f).setOnComplete(() => DisableMe(obj));
-	}
-	
-	public void DisableMe(GameObject obj)
-	{
-		obj.SetActive(false);
-	}
 }

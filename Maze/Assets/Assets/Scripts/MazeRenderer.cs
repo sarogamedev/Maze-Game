@@ -54,7 +54,7 @@ public class MazeRenderer : MonoBehaviour
         }
 	    playerPos.y = -0.5f;
 
-        var player = Instantiate(playerPrefab);
+	    var player = Instantiate(playerPrefab, transform);
         player.position = playerPos;
         
         

@@ -3,12 +3,19 @@ using UnityEngine.SceneManagement;
 
 public class UI : MonoBehaviour
 {
+	public static bool GameIsPaused = false;
+	
 	private GameManager gm;
     
 	[SerializeField] private GameObject settingsMenu;
 	[SerializeField] private GameObject levelSelectMenu;
 	[SerializeField] private GameObject pauseMenu;
-	[SerializeField] private GameObject x;
+	[SerializeField] private GameObject II;
+	[SerializeField] private GameObject levels1;
+	[SerializeField] private GameObject levels2;
+	[SerializeField] private GameObject nextButton;
+	[SerializeField] private GameObject previousButton;
+	[SerializeField] private GameObject joyStick;
 	
 	private int Level4x4 = 4;
 	private int Level6x6 = 6;
@@ -40,46 +47,101 @@ public class UI : MonoBehaviour
 	{
 		gm.GenerateNewMaze(Level8x8, Level8x8);
 	}
+	
+	public void ExitButton()
+	{
+		gm.ExitApplication();
+	}
+
+	public void MainMenu()
+	{
+		Time.timeScale = 1f;
+		gm.LoadMainMenu();
+	}
+	
+	//Calling UI methods
 
     public void StartButton()
     {
-	    gm.Menu(levelSelectMenu);
-    }
-
-    public void ExitButton()
-    {
-        gm.ExitApplication();
+	    EnableMe(levelSelectMenu);
     }
     
 	public void SettingsButton()
 	{
-		gm.Menu(settingsMenu);
+		EnableMe(settingsMenu);
 	}
 	
 	public void PauseButton()
 	{
-		gm.Menu(pauseMenu);
-		gm.DisableMe(x);
+		EnableMe(pauseMenu);
+		Invoke("Pause", 1f);
+		DisableMe(joyStick);
+		DisableMe(II);
 	}
 	
 	public void XS()
 	{
-		gm.CloseMenu(settingsMenu);
+		CloseMenu(settingsMenu);
 	}
 	
 	public void XL()
 	{
-		gm.CloseMenu(levelSelectMenu);
+		CloseMenu(levelSelectMenu);
 	}
 	
 	public void XP()
 	{
-		gm.CloseMenu(pauseMenu);
-		gm.Menu(x);
+		Resume();
+		EnableMe(joyStick);
+		CloseMenu(pauseMenu);
+		EnableMe(II);
 	}
 	
-	public void MainMenu()
+	public void	Next()
 	{
-		gm.LoadMainMenu();
+		CloseMenu(levels1);
+		EnableMe(levels2);
+		EnableMe(previousButton);
+		DisableMe(nextButton);
 	}
+	
+	public void Previous()
+	{
+		CloseMenu(levels2);
+		EnableMe(levels1);
+		EnableMe(nextButton);
+		DisableMe(previousButton);
+	}
+	
+	
+	public void Pause()
+	{
+		//Time.timeScale = 0f;
+		GameIsPaused = true;
+	}
+	
+	public void Resume()
+	{
+		Time.timeScale = 1f;
+		GameIsPaused = false;
+	}
+	
+	//Methods to initiate UI
+	
+	private void EnableMe(GameObject obj)
+	{
+		obj.SetActive(true);
+	}
+	
+	private void CloseMenu(GameObject obj)
+	{
+		LeanTween.scale(obj, Vector3.zero, 0.2f).setOnComplete(() => DisableMe(obj));
+	}
+	
+	private void DisableMe(GameObject obj)
+	{
+		obj.SetActive(false);
+	}
+	
+	
 }
