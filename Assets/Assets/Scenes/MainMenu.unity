@@ -941,11 +941,12 @@ MonoBehaviour:
   settingsMenu: {fileID: 580527432}
   levelSelectMenu: {fileID: 1989399633}
   pauseMenu: {fileID: 0}
-  x: {fileID: 0}
+  II: {fileID: 0}
   levels1: {fileID: 1400998076}
   levels2: {fileID: 2143698784}
   nextButton: {fileID: 938457820}
   previousButton: {fileID: 825011180}
+  joyStick: {fileID: 0}
 --- !u!1 &223404303
 GameObject:
   m_ObjectHideFlags: 0
