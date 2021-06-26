@@ -12,12 +12,13 @@ public class MazeRenderer : MonoBehaviour
 
     [SerializeField] private Transform wallPrefab;
 
-    [SerializeField] private Transform floorPrefab;
+	[SerializeField] private Transform floorPrefab;
 
-    [SerializeField] private Transform playerPrefab;
+	[SerializeField] private Transform playerPrefab;
 
-    private Vector3 playerPos;
+	private Vector3 playerPos;
     
+	[SerializeField] private Transform chestPrefab;
 
     void Start()
     {
@@ -29,34 +30,9 @@ public class MazeRenderer : MonoBehaviour
     }
 
     private void Draw(WallState[,] maze)
-    {
-        var floor = Instantiate(floorPrefab, transform);
-        var pos = floor.position;
-        pos = new Vector3(pos.x, -0.5f, pos.z);
-        floor.position = pos;
-        floor.localScale = new Vector3(width, 1, height);
-        if (width % 2 == 0)
-        {
-            playerPos.x = -width/2;
-        }
-        else
-        {
-            playerPos.x = -width/2 - 0.5f;
-        }
-
-        if (height % 2 == 0)
-        {
-            playerPos.z = -height/2;
-        }
-        else
-        {
-            playerPos.z = -height/2 - 0.5f;
-        }
-	    playerPos.y = -0.5f;
-
-	    var player = Instantiate(playerPrefab, transform);
-        player.position = playerPos;
-        
+	{
+	
+		GenerateLevelAssets();
         
         for (int i = 0; i < width; i++)
         {
@@ -110,5 +86,41 @@ public class MazeRenderer : MonoBehaviour
                 }
             }
         }
-    }
+	}
+    
+	private void GenerateLevelAssets()
+	{
+		float yCorrection = -0.5f;
+		var floor = Instantiate(floorPrefab, transform);
+		var pos = floor.position;
+		pos = new Vector3(pos.x, -0.5f, pos.z);
+		floor.position = pos;
+		floor.localScale = new Vector3(width, 1, height);
+		
+		if (width % 2 == 0)
+		{
+			playerPos.x = -width/2;
+		}
+		else
+		{
+			playerPos.x = -width/2 + yCorrection;
+		}
+
+		if (height % 2 == 0)
+		{
+			playerPos.z = -height/2;
+		}
+		else
+		{
+			playerPos.z = -height/2 + yCorrection;
+		}
+		playerPos.y = yCorrection;
+
+		var player = Instantiate(playerPrefab, transform);
+		player.position = playerPos;
+        
+		var chest = Instantiate(chestPrefab, transform);
+		chest.localScale = new Vector3 (0.1f, 0.1f, 0.1f);
+		chest.position = new Vector3 (-playerPos.x - 1, yCorrection, -playerPos.z - 1);
+	}
 }

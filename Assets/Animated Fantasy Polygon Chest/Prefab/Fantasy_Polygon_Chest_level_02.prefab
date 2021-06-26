@@ -62,6 +62,63 @@ Transform:
   m_Father: {fileID: 1995913012238280066}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &848183546702785807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1183581716970284457}
+  - component: {fileID: 5297955737543509646}
+  - component: {fileID: 6642379330884415316}
+  m_Layer: 0
+  m_Name: Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1183581716970284457
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848183546702785807}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8736837570382991104}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &5297955737543509646
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848183546702785807}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7, y: 3, z: 5}
+  m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &6642379330884415316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848183546702785807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5e091418609c6e49836910f355ac4bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1569422173428593717
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,8 +234,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2932163535545677974}
-  m_LocalRotation: {x: -0.00000006371197, y: -0.00000004371136, z: 2.4448319e-14,
-    w: 1}
+  m_LocalRotation: {x: -0.00000006371197, y: -0.00000004371136, z: 2.4448319e-14, w: 1}
   m_LocalPosition: {x: -4.0643814e-24, y: 0.003620899, z: 0}
   m_LocalScale: {x: 1.0000001, y: 0.99999964, z: 1.0000001}
   m_Children:
@@ -290,6 +346,7 @@ GameObject:
   - component: {fileID: 8015479166770373836}
   - component: {fileID: 6837767511948518383}
   - component: {fileID: 5938762272129030934}
+  - component: {fileID: 5157564960074636498}
   m_Layer: 0
   m_Name: Treasure_chest_lid_GEO
   m_TagString: Untagged
@@ -325,6 +382,8 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -336,6 +395,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -385,10 +445,23 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!65 &5157564960074636498
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4232960321702951057}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.052603386, y: 0.032067265, z: 0.038541876}
+  m_Center: {x: -0.00052341504, y: 0.0048225485, z: 0.012775887}
 --- !u!1 &5253450708393883314
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,16 +518,17 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6359029334351881624}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 6071442767260824321}
   - {fileID: 8015479166770373836}
   - {fileID: 3687968471163710681}
+  - {fileID: 1183581716970284457}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &2600094370684988658
 Animator:
   serializedVersion: 3
@@ -465,7 +539,7 @@ Animator:
   m_GameObject: {fileID: 6359029334351881624}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 6fe60a1f58017004ba36e5dba726da31, type: 3}
-  m_Controller: {fileID: 9100000, guid: 529b61144c97e3e4f92f4a56a5defdc5, type: 2}
+  m_Controller: {fileID: 9100000, guid: cdddbbd46639c4c4e8b6a88ec8c631ed, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -579,6 +653,7 @@ GameObject:
   - component: {fileID: 6071442767260824321}
   - component: {fileID: 7226314324832213508}
   - component: {fileID: 6018031030088030477}
+  - component: {fileID: 3693045188329685553}
   m_Layer: 0
   m_Name: Treasure_chest_base_GEO
   m_TagString: Untagged
@@ -614,6 +689,8 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -625,6 +702,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -674,10 +752,23 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!65 &3693045188329685553
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7011461748498119529}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.050596245, y: 0.020407753, z: 0.033593155}
+  m_Center: {x: -0.0009936782, y: 0.010266493, z: 0.00036929268}
 --- !u!1 &7358201660713125937
 GameObject:
   m_ObjectHideFlags: 0

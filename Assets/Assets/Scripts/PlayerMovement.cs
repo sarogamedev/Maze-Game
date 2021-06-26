@@ -18,8 +18,8 @@ public class PlayerMovement : MonoBehaviour
         //Cursor.lockState = CursorLockMode.Locked;
         GameObject obj = GameObject.FindWithTag("VirtualJoystick");
         joystick = obj.GetComponent<Joystick>();
-        rb = FindObjectOfType<Rigidbody>();
-	    animator = FindObjectOfType<Animator>();
+	    rb = GetComponent<Rigidbody>();
+	    animator = GetComponent<Animator>();
     }
 
 	

@@ -475,6 +475,7 @@ GameObject:
   - component: {fileID: 414748358810919924}
   - component: {fileID: 5442498283696955280}
   - component: {fileID: 8393031515363426953}
+  - component: {fileID: 7678935940930269614}
   m_Layer: 0
   m_Name: Treasure_chest_lid_GEO
   m_TagString: Untagged
@@ -510,6 +511,8 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -521,6 +524,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -570,10 +574,23 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!65 &7678935940930269614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5641437087236539719}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05260339, y: 0.028168673, z: 0.03239268}
+  m_Center: {x: -0.0005234168, y: 0.0038515236, z: 0.013140265}
 --- !u!1 &5871591645692926512
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,8 +645,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5943945448882263941}
-  m_LocalRotation: {x: -0.000000063711994, y: -0.00000004371135, z: 2.4266134e-10,
-    w: 1}
+  m_LocalRotation: {x: -0.000000063711994, y: -0.00000004371135, z: 2.4266134e-10, w: 1}
   m_LocalPosition: {x: 8.21666e-18, y: 0.003620899, z: 6.91523e-24}
   m_LocalScale: {x: 1.0000001, y: 0.99999964, z: 1.0000001}
   m_Children:
@@ -660,8 +676,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6832288250537581783}
-  m_LocalRotation: {x: 0.000000036890874, y: 0.00000011920926, z: -2.4264407e-10,
-    w: 1}
+  m_LocalRotation: {x: 0.000000036890874, y: 0.00000011920926, z: -2.4264407e-10, w: 1}
   m_LocalPosition: {x: 1.01995175e-16, y: 0.019821733, z: 1.3552527e-22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -693,16 +708,17 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7056306788243686916}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 3374856007896480029}
   - {fileID: 414748358810919924}
   - {fileID: 3856501233501333059}
+  - {fileID: 5485314236181659366}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &3049585352295219088
 Animator:
   serializedVersion: 3
@@ -713,7 +729,7 @@ Animator:
   m_GameObject: {fileID: 7056306788243686916}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 9d638e4ab8607194dab32e8f1f18af0f, type: 3}
-  m_Controller: {fileID: 9100000, guid: 529b61144c97e3e4f92f4a56a5defdc5, type: 2}
+  m_Controller: {fileID: 9100000, guid: cdddbbd46639c4c4e8b6a88ec8c631ed, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -745,8 +761,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7069799755590488019}
-  m_LocalRotation: {x: -0.000000043426706, y: -0.000000021855683, z: 0.00000011920926,
-    w: 1}
+  m_LocalRotation: {x: -0.000000043426706, y: -0.000000021855683, z: 0.00000011920926, w: 1}
   m_LocalPosition: {x: -8.760534e-10, y: -0.0000000011708418, z: 0.019821724}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -765,6 +780,7 @@ GameObject:
   - component: {fileID: 3374856007896480029}
   - component: {fileID: 6164191237008463054}
   - component: {fileID: 5804651658253341488}
+  - component: {fileID: 3588886609918540535}
   m_Layer: 0
   m_Name: Treasure_chest_base_GEO
   m_TagString: Untagged
@@ -800,6 +816,8 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -811,6 +829,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -860,10 +879,80 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!65 &3588886609918540535
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7680362088624178503}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.048784927, y: 0.020407759, z: 0.025770282}
+  m_Center: {x: -0.00086787436, y: 0.010266493, z: 0.00021120401}
+--- !u!1 &8211088842437168540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5485314236181659366}
+  - component: {fileID: 1434775612547229162}
+  - component: {fileID: 2665895457416598682}
+  m_Layer: 0
+  m_Name: Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5485314236181659366
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8211088842437168540}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2785472371509426277}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1434775612547229162
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8211088842437168540}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7, y: 3, z: 5}
+  m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &2665895457416598682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8211088842437168540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5e091418609c6e49836910f355ac4bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8303955562638549228
 GameObject:
   m_ObjectHideFlags: 0

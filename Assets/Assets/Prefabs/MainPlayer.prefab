@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3641130692237421300}
   m_Layer: 0
   m_Name: MainPlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -202,6 +202,10 @@ PrefabInstance:
     - target: {fileID: 1599834806993438423, guid: 8e3f3b13c0c634b448d4c69ea03c8ec0, type: 3}
       propertyPath: m_Name
       value: Animated Human Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1599834806993438423, guid: 8e3f3b13c0c634b448d4c69ea03c8ec0, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2335284216359597252, guid: 8e3f3b13c0c634b448d4c69ea03c8ec0, type: 3}
       propertyPath: m_RootOrder
