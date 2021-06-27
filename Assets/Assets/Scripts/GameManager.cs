@@ -1,14 +1,21 @@
 ﻿using UnityEngine.SceneManagement;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
-	
-	[Range(1, 1000)] public int width;
+    [Range(1, 1000)] public int width;
 
 	[Range(1, 1000)] public int height;
 	
+	[SerializeField] private GameObject loadScreen;
+
+	public int levelCount = 0;
+
+	
 	public static GameManager instance;
+
 	
 	// Awake is called when the script instance is being loaded.
 	private void Awake()
@@ -17,14 +24,42 @@ public class GameManager : MonoBehaviour
 		SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Additive);
 	}
 	
+	List <AsyncOperation> scenesLoading = new List <AsyncOperation>();
+
 	public void GenerateNewMaze(int wid, int ht)
 	{
+		loadScreen.SetActive(true);
+
 		width = wid;
 		height = ht;
-		SceneManager.UnloadSceneAsync("MainMenu");
-		SceneManager.LoadSceneAsync("MainScene", LoadSceneMode.Additive);
+		
+		if(SceneManager.GetSceneByName("MainMenu").isLoaded)
+		{
+			scenesLoading.Add (SceneManager.UnloadSceneAsync("MainMenu"));
+		}
+		
+		if(SceneManager.GetSceneByName("MainScene").isLoaded)
+		{
+			scenesLoading.Add (SceneManager.UnloadSceneAsync("MainScene"));
+		}
+		
+		scenesLoading.Add (SceneManager.LoadSceneAsync("MainScene", LoadSceneMode.Additive));
+
+		StartCoroutine(GetSceneLoadProgress());
 	}
     
+	private IEnumerator GetSceneLoadProgress()
+	{
+		for (int i = 0; i < scenesLoading.Count; i++)
+		{
+			while(!scenesLoading[i].isDone)
+			{
+				yield return null;
+			}
+		}
+		loadScreen.SetActive(false);
+	}
+
 	public void LoadMainMenu()
 	{
 		SceneManager.UnloadSceneAsync("MainScene");
@@ -35,6 +70,4 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
-    
-	
 }

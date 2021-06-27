@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class UI : MonoBehaviour
 	[SerializeField] private GameObject nextButton;
 	[SerializeField] private GameObject previousButton;
 	[SerializeField] private GameObject joyStick;
+	public GameObject levelComplete;
 	
 	private int Level4x4 = 4;
 	private int Level6x6 = 6;
@@ -57,6 +59,32 @@ public class UI : MonoBehaviour
 	{
 		Time.timeScale = 1f;
 		gm.LoadMainMenu();
+	}
+	
+	public void NextLevel()
+	{	
+		if(gm.levelCount <= 2)
+		{
+			LevelOneToThree();
+		}
+		
+		if(gm.levelCount >= 3 && gm.levelCount <= 6)
+		{
+			LevelFourToSeven();
+		}
+		
+		if(gm.levelCount >= 7 && gm.levelCount <= 11)
+		{
+			LevelEightToTwelve();
+		}
+	}
+
+	public void InteractLevel()
+	{
+		for (int i = 0; i <= gm.levelCount; i++)
+		{
+			levels1.transform.GetChild(i).GetComponent<Button>().interactable = true;
+		}
 	}
 	
 	//Calling UI methods
@@ -127,8 +155,7 @@ public class UI : MonoBehaviour
 	}
 	
 	//Methods to initiate UI
-	
-	private void EnableMe(GameObject obj)
+	public void EnableMe(GameObject obj)
 	{
 		obj.SetActive(true);
 	}
@@ -142,6 +169,5 @@ public class UI : MonoBehaviour
 	{
 		obj.SetActive(false);
 	}
-	
 	
 }
