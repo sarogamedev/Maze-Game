@@ -23,8 +23,8 @@ public class UI : MonoBehaviour
 	private int Level6x6 = 6;
 	private int Level8x8 = 8;
 	private int Level10x10 = 10;
-	
-    
+	private int Level12x12 = 12;
+	private int Level15x15 = 15;
     private void Start()
     {
 	    gm = FindObjectOfType<GameManager>();
@@ -49,7 +49,22 @@ public class UI : MonoBehaviour
 	{
 		gm.GenerateNewMaze(Level8x8, Level8x8);
 	}
-	
+
+	public void LevelThirteenToSixteen()
+	{
+		gm.GenerateNewMaze(Level10x10, Level10x10);
+	}
+
+	public void LevelSeventeenToTwenty()
+	{
+		gm.GenerateNewMaze(Level12x12, Level12x12);
+	}
+
+	public void LevelTwentyoneToTwentyfour()
+	{
+		gm.GenerateNewMaze(Level15x15, Level15x15);
+	}
+
 	public void ExitButton()
 	{
 		gm.ExitApplication();
@@ -77,13 +92,37 @@ public class UI : MonoBehaviour
 		{
 			LevelEightToTwelve();
 		}
+
+		if(gm.levelCount >= 12 && gm.levelCount <= 15)
+		{
+			LevelThirteenToSixteen();
+		}
+
+		if(gm.levelCount >= 16 && gm.levelCount <= 19)
+		{
+			LevelSeventeenToTwenty();
+		}
+		if(gm.levelCount >= 20 && gm.levelCount <= 23)
+		{
+			LevelTwentyoneToTwentyfour();
+		}
 	}
 
 	public void InteractLevel()
 	{
-		for (int i = 0; i <= gm.levelCount; i++)
+		if(gm.levelCount <= 12)
 		{
-			levels1.transform.GetChild(i).GetComponent<Button>().interactable = true;
+			for (int i = 0; i <= gm.levelCount; i++)
+			{
+				levels1.transform.GetChild(i).GetComponent<Button>().interactable = true;
+			}
+		}
+		if(gm.levelCount > 12)
+		{
+			for(int i = 0; i <= gm.levelCount; i++)
+			{
+				levels2.transform.GetChild(i).GetComponent<Button>().interactable = true;
+			}
 		}
 	}
 	
