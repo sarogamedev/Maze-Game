@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         turnSmooth.x = joystick.Direction.x;
-        turnSmooth.y = 0;
+        //turnSmooth.y = 0;
         turnSmooth.z = joystick.Direction.y;
         horizontal = joystick.Horizontal;
         vertical = joystick.Vertical;
@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
         float mag = smoothMovement * Time.fixedDeltaTime;
         
         rb.transform.rotation = Quaternion.LookRotation(turnSmooth, rb.transform.up);
-        rb.transform.localPosition += Vector3.right * (horizontal * mag);
+        rb.transform.Translate (Vector3.right * (horizontal * mag), Space.World);
     }
 
     private void VerticalMovement()
@@ -70,6 +70,6 @@ public class PlayerMovement : MonoBehaviour
         float mag = smoothMovement * Time.fixedDeltaTime;
 
         rb.transform.rotation = Quaternion.LookRotation(turnSmooth, rb.transform.up);
-        rb.transform.localPosition += Vector3.forward * (vertical * mag);
+        rb.transform.Translate (Vector3.forward * (vertical * mag), Space.World);
     }
 }
