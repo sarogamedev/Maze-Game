@@ -11,13 +11,14 @@ public class UI : MonoBehaviour
 	[SerializeField] private GameObject settingsMenu;
 	[SerializeField] private GameObject levelSelectMenu;
 	[SerializeField] private GameObject pauseMenu;
-	[SerializeField] private GameObject II;
 	[SerializeField] private GameObject levels1;
 	[SerializeField] private GameObject levels2;
 	[SerializeField] private GameObject nextButton;
 	[SerializeField] private GameObject previousButton;
-	[SerializeField] private GameObject joyStick;
+
+	public GameObject joyStick;
 	public GameObject levelComplete;
+	public GameObject II;
 	
 	private int Level4x4 = 4;
 	private int Level6x6 = 6;
@@ -204,7 +205,7 @@ public class UI : MonoBehaviour
 		LeanTween.scale(obj, Vector3.zero, 0.2f).setOnComplete(() => DisableMe(obj));
 	}
 	
-	private void DisableMe(GameObject obj)
+	public void DisableMe(GameObject obj)
 	{
 		obj.SetActive(false);
 	}

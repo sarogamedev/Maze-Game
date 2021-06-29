@@ -18,8 +18,12 @@ public class ChestTrigger : MonoBehaviour
 	private void LevelComplete()
 	{	
 		Debug.Log("Level Complete!");
-		FindObjectOfType<GameManager>().levelCount++;
+		var gm = FindObjectOfType<GameManager>();
+		gm.levelCount++;
+		SaveSystem.SaveGame(gm);
 		var ui = FindObjectOfType<UI>();
+		ui.DisableMe(ui.II);
+		ui.DisableMe(ui.joyStick);
 		ui.EnableMe(ui.levelComplete);
 	}
 }

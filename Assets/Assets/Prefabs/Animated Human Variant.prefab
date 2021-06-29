@@ -43,10 +43,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
-  smoothMovement: 2
+  smoothMovement: 1.8
   rb: {fileID: 5410102971555625442}
   animator: {fileID: 5684276510335441342}
-  trailEffect: {fileID: 0}
 --- !u!1001 &7282932276838080478
 PrefabInstance:
   m_ObjectHideFlags: 0

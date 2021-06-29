@@ -2,6 +2,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,13 +14,19 @@ public class GameManager : MonoBehaviour
 
 	public int levelCount = 0;
 
-	
 	public static GameManager instance;
 
 	
 	// Awake is called when the script instance is being loaded.
 	private void Awake()
-	{
+	{	
+		if(File.Exists(SaveSystem.path))
+		{
+			SaveData data = SaveSystem.LoadGame();
+			levelCount = data.level;
+		}
+
+		
 		instance = this;
 		SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Additive);
 	}
