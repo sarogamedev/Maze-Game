@@ -19,7 +19,12 @@ public class ChestTrigger : MonoBehaviour
 	{	
 		Debug.Log("Level Complete!");
 		var gm = FindObjectOfType<GameManager>();
-		gm.levelCount++;
+		
+		if(gm.currentLevel == gm.levelCount)
+		{
+			gm.levelCount++;
+		}
+
 		SaveSystem.SaveGame(gm);
 		var ui = FindObjectOfType<UI>();
 		ui.DisableMe(ui.II);

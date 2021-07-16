@@ -17,6 +17,11 @@ public static class SaveSystem
         stream.Close();
     }
 
+    public static void DebugDeleteSaveData()
+    {
+       File.Delete(path);
+    }
+
     public static SaveData LoadGame()
     {
         if(File.Exists(path))

@@ -35,36 +35,6 @@ public class UI : MonoBehaviour
 	    	Debug.LogError("There is no game manager in the scene");
 	    }
     }
-    
-	public void LevelOneToThree()
-	{
-		gm.GenerateNewMaze(Level4x4, Level4x4);
-	}
-	
-	public void LevelFourToSeven()
-	{
-		gm.GenerateNewMaze(Level6x6, Level6x6);
-	}
-	
-	public void LevelEightToTwelve()
-	{
-		gm.GenerateNewMaze(Level8x8, Level8x8);
-	}
-
-	public void LevelThirteenToSixteen()
-	{
-		gm.GenerateNewMaze(Level10x10, Level10x10);
-	}
-
-	public void LevelSeventeenToTwenty()
-	{
-		gm.GenerateNewMaze(Level12x12, Level12x12);
-	}
-
-	public void LevelTwentyoneToTwentyfour()
-	{
-		gm.GenerateNewMaze(Level15x15, Level15x15);
-	}
 
 	public void ExitButton()
 	{
@@ -79,34 +49,104 @@ public class UI : MonoBehaviour
 	
 	public void NextLevel()
 	{	
-		if(gm.levelCount <= 2)
+		if(gm.levelCount == 0)
 		{
-			LevelOneToThree();
+			One();
+		}
+		if(gm.levelCount == 1)
+		{
+			Two();
+		}
+		if(gm.levelCount == 2)
+		{
+			Three();
+		}
+		if(gm.levelCount == 3)
+		{
+			Four();
+		}
+		if(gm.levelCount == 4)
+		{
+			Five();
+		}
+		if(gm.levelCount == 5)
+		{
+			Six();
+		}
+		if(gm.levelCount == 6)
+		{
+			Seven();
+		}
+		if(gm.levelCount == 7)
+		{
+			Eight();
+		}
+		if(gm.levelCount == 8)
+		{
+			Nine();
+		}
+		if(gm.levelCount == 9)
+		{
+			Ten();
+		}
+		if(gm.levelCount == 10)
+		{
+			Eleven();
+		}
+		if(gm.levelCount == 11)
+		{
+			Twelve();
+		}
+		if(gm.levelCount == 12)
+		{
+			Thirteen();
+		}
+		if(gm.levelCount == 13)
+		{
+			Fourteen();
+		}
+		if(gm.levelCount == 14)
+		{
+			Fifteen();
+		}
+		if(gm.levelCount == 15)
+		{
+			Sixteen();
+		}
+		if(gm.levelCount == 16)
+		{
+			Seventeen();
+		}
+		if(gm.levelCount == 17)
+		{
+			Eighteen();
+		}
+		if(gm.levelCount == 18)
+		{
+			nineteen();
+		}
+		if(gm.levelCount == 19)
+		{
+			Twenty();
+		}
+		if(gm.levelCount == 20)
+		{
+			Twentyone();
+		}
+		if(gm.levelCount == 21)
+		{
+			TwentyTwo();
+		}
+		if(gm.levelCount == 22)
+		{
+			TwentyThree();
+		}
+		if(gm.levelCount == 23)
+		{
+			TwentyFour();
 		}
 		
-		if(gm.levelCount >= 3 && gm.levelCount <= 6)
-		{
-			LevelFourToSeven();
-		}
-		
-		if(gm.levelCount >= 7 && gm.levelCount <= 11)
-		{
-			LevelEightToTwelve();
-		}
-
-		if(gm.levelCount >= 12 && gm.levelCount <= 15)
-		{
-			LevelThirteenToSixteen();
-		}
-
-		if(gm.levelCount >= 16 && gm.levelCount <= 19)
-		{
-			LevelSeventeenToTwenty();
-		}
-		if(gm.levelCount >= 20 && gm.levelCount <= 23)
-		{
-			LevelTwentyoneToTwentyfour();
-		}
+	
 	}
 
 	public void InteractLevel()
@@ -120,6 +160,11 @@ public class UI : MonoBehaviour
 		}
 		if(gm.levelCount > 12)
 		{
+			foreach (GameObject child in levels1.transform)
+			{
+				child.SetActive(true);
+			}
+
 			for(int i = 0; i <= gm.levelCount; i++)
 			{
 				levels2.transform.GetChild(i).GetComponent<Button>().interactable = true;
@@ -210,4 +255,123 @@ public class UI : MonoBehaviour
 		obj.SetActive(false);
 	}
 	
+	public void One()
+	{
+		gm.GenerateNewMaze(Level4x4, Level4x4);
+		gm.currentLevel = 0;
+	}
+	public void Two()
+	{
+		gm.GenerateNewMaze(Level4x4, Level4x4);
+		gm.currentLevel = 1;
+	}
+	public void Three()
+	{
+		gm.GenerateNewMaze(Level4x4, Level4x4);
+		gm.currentLevel = 2;
+	}
+	public void Four()
+	{
+		gm.GenerateNewMaze(Level6x6, Level6x6);
+		gm.currentLevel = 3;
+	}
+	public void Five()
+	{
+		gm.GenerateNewMaze(Level6x6, Level6x6);
+		gm.currentLevel = 4;
+	}
+	public void Six()
+	{
+		gm.GenerateNewMaze(Level6x6, Level6x6);
+		gm.currentLevel = 5;
+	}
+	public void Seven()
+	{
+		gm.GenerateNewMaze(Level6x6, Level6x6);
+		gm.currentLevel = 6;
+	}
+	public void Eight()
+	{
+		gm.GenerateNewMaze(Level8x8, Level8x8);
+		gm.currentLevel = 7;
+	}
+	public void Nine()
+	{
+		gm.GenerateNewMaze(Level8x8, Level8x8);
+		gm.currentLevel = 8;
+	}
+	public void Ten()
+	{
+		gm.GenerateNewMaze(Level8x8, Level8x8);
+		gm.currentLevel = 9;
+	}
+	public void Eleven()
+	{
+		gm.GenerateNewMaze(Level8x8, Level8x8);
+		gm.currentLevel = 10;
+	}
+	public void Twelve()
+	{
+		gm.GenerateNewMaze(Level8x8, Level8x8);
+		gm.currentLevel = 11;
+	}
+	public void Thirteen()
+	{
+		gm.GenerateNewMaze(Level10x10, Level10x10);
+		gm.currentLevel = 12;
+	}
+	public void Fourteen()
+	{
+		gm.GenerateNewMaze(Level10x10, Level10x10);
+		gm.currentLevel = 13;
+	}
+	public void Fifteen()
+	{
+		gm.GenerateNewMaze(Level10x10, Level10x10);
+		gm.currentLevel = 14;
+	}public void Sixteen()
+	{
+		gm.GenerateNewMaze(Level10x10, Level10x10);
+		gm.currentLevel = 15;
+	}
+	public void Seventeen()
+	{
+		gm.GenerateNewMaze(Level12x12, Level12x12);
+		gm.currentLevel = 16;
+	}
+	public void Eighteen()
+	{
+		gm.GenerateNewMaze(Level12x12, Level12x12);	
+		gm.currentLevel = 17;
+	}
+	public void nineteen()
+	{
+		gm.GenerateNewMaze(Level12x12, Level12x12);
+		gm.currentLevel = 18;
+	}
+	public void Twenty()
+	{
+		gm.GenerateNewMaze(Level12x12, Level12x12);
+		gm.currentLevel = 19;
+	}
+	public void Twentyone()
+	{
+		gm.GenerateNewMaze(Level15x15, Level15x15);
+		gm.currentLevel = 20;
+	}
+	public void TwentyTwo()
+	{
+		gm.GenerateNewMaze(Level15x15, Level15x15);
+		gm.currentLevel = 21;
+	}
+	public void TwentyThree()
+	{
+		gm.GenerateNewMaze(Level15x15, Level15x15);
+		gm.currentLevel = 22;
+	}
+	public void TwentyFour()
+	{
+		gm.GenerateNewMaze(Level15x15, Level15x15);
+		gm.currentLevel = 23;
+	}
 }

@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelFourToSeven
+        m_MethodName: Seven
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -507,7 +507,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelTwentyoneToTwentyfour
+        m_MethodName: TwentyTwo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -941,13 +941,13 @@ MonoBehaviour:
   settingsMenu: {fileID: 580527432}
   levelSelectMenu: {fileID: 1989399633}
   pauseMenu: {fileID: 0}
-  II: {fileID: 0}
   levels1: {fileID: 1400998076}
   levels2: {fileID: 2143698784}
   nextButton: {fileID: 938457820}
   previousButton: {fileID: 825011180}
   joyStick: {fileID: 0}
   levelComplete: {fileID: 0}
+  II: {fileID: 0}
 --- !u!1 &223404303
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,7 +1034,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelFourToSeven
+        m_MethodName: Five
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1347,7 +1347,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelThirteenToSixteen
+        m_MethodName: Thirteen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1481,7 +1481,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelFourToSeven
+        m_MethodName: Six
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1630,7 +1630,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelEightToTwelve
+        m_MethodName: Eleven
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1794,7 +1794,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelSeventeenToTwenty
+        m_MethodName: Eighteen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2226,7 +2226,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelSeventeenToTwenty
+        m_MethodName: Twenty
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2584,7 +2584,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelThirteenToSixteen
+        m_MethodName: Fifteen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2718,7 +2718,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelOneToThree
+        m_MethodName: One
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4018,7 +4018,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelEightToTwelve
+        m_MethodName: Ten
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4182,7 +4182,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelThirteenToSixteen
+        m_MethodName: Sixteen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4851,7 +4851,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelFourToSeven
+        m_MethodName: Four
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5435,7 +5435,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelOneToThree
+        m_MethodName: Two
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6363,7 +6363,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelTwentyoneToTwentyfour
+        m_MethodName: TwentyFour
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6631,7 +6631,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelEightToTwelve
+        m_MethodName: Twelve
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6780,7 +6780,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelEightToTwelve
+        m_MethodName: Nine
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7178,7 +7178,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelOneToThree
+        m_MethodName: Three
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7663,7 +7663,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelEightToTwelve
+        m_MethodName: Eight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7963,7 +7963,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelSeventeenToTwenty
+        m_MethodName: nineteen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8704,7 +8704,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelSeventeenToTwenty
+        m_MethodName: Seventeen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8853,7 +8853,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelTwentyoneToTwentyfour
+        m_MethodName: Twentyone
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9002,7 +9002,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelTwentyoneToTwentyfour
+        m_MethodName: TwentyThree
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9509,7 +9509,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 120715851}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: LevelThirteenToSixteen
+        m_MethodName: Fourteen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

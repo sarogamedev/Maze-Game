@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
 	[SerializeField] private GameObject loadScreen;
 
 	public int levelCount = 0;
+	public int currentLevel = 0;
 
 	public static GameManager instance;
 
@@ -31,6 +32,14 @@ public class GameManager : MonoBehaviour
 		SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Additive);
 	}
 	
+	void Update()
+	{
+		if(Input.GetKey(KeyCode.Escape))
+		{
+			Debug.Log("Save Data deleted! Restart into play mode to take effect");
+			SaveSystem.DebugDeleteSaveData();
+		}
+	}
 	List <AsyncOperation> scenesLoading = new List <AsyncOperation>();
 
 	public void GenerateNewMaze(int wid, int ht)
