@@ -1,0 +1,4 @@
+repository "Maze-Game@saro@cloud"
+  path "/"
+    br "/main"
+    co "/main"

@@ -35,6 +35,21 @@ public class UI : MonoBehaviour
 	    	Debug.LogError("There is no game manager in the scene");
 	    }
     }
+    
+    public void SixtyFPS()
+    {
+	    Application.targetFrameRate = 60;
+    }
+    
+    public void FortyFiveFPS()
+    {
+	    Application.targetFrameRate = 45;
+    }
+
+    public void ThirtyFPS()
+    {
+	    Application.targetFrameRate = 30;
+    } 
 
 	public void ExitButton()
 	{

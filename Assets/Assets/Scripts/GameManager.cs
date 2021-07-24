@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
 	
 	// Awake is called when the script instance is being loaded.
 	private void Awake()
-	{	
+	{
 		if(File.Exists(SaveSystem.path))
 		{
 			SaveData data = SaveSystem.LoadGame();
