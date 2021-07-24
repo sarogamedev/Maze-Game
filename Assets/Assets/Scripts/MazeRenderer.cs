@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 public class MazeRenderer : MonoBehaviour
 {
@@ -20,6 +23,8 @@ public class MazeRenderer : MonoBehaviour
     
 	[SerializeField] private Transform chestPrefab;
 
+	[SerializeField] private GameObject batchRoot;
+
     void Start()
     {
 	    var gm = FindObjectOfType<GameManager>();
@@ -32,7 +37,6 @@ public class MazeRenderer : MonoBehaviour
     private void Draw(WallState[,] maze)
 	{
 	
-		GenerateLevelAssets();
         
         for (int i = 0; i < width; i++)
         {
@@ -43,7 +47,7 @@ public class MazeRenderer : MonoBehaviour
 
                 if (cell.HasFlag(WallState.Up))
                 {
-                    var topWall = Instantiate(wallPrefab, transform);
+                    var topWall = Instantiate(wallPrefab, batchRoot.transform);
                     topWall.position = position + new Vector3(0, 0, size/2);
                     var localScale = topWall.localScale;
 	                localScale = new Vector3(scaleFix, localScale.y, localScale.z);
@@ -52,7 +56,7 @@ public class MazeRenderer : MonoBehaviour
 
                 if (cell.HasFlag(WallState.Left))
                 {
-                    var leftWall = Instantiate(wallPrefab, transform);
+                    var leftWall = Instantiate(wallPrefab, batchRoot.transform);
                     leftWall.position = position + new Vector3(-size / 2, 0, 0);
 	                leftWall.eulerAngles = new Vector3(0, 0, 90);
                     var localScale = leftWall.localScale;
@@ -64,7 +68,7 @@ public class MazeRenderer : MonoBehaviour
                 {
                     if (cell.HasFlag(WallState.Right))
                     {
-                        var rightWall = Instantiate(wallPrefab, transform);
+                        var rightWall = Instantiate(wallPrefab, batchRoot.transform);
                         rightWall.position = position + new Vector3(size / 2, 0, 0);
 	                    rightWall.eulerAngles = new Vector3(0, 0, 90);
                         var localScale = rightWall.localScale;
@@ -77,7 +81,7 @@ public class MazeRenderer : MonoBehaviour
                 {
                     if(cell.HasFlag(WallState.Down))
                     {
-                        var topWall = Instantiate(wallPrefab, transform);
+                        var topWall = Instantiate(wallPrefab, batchRoot.transform);
                         topWall.position = position + new Vector3(0, 0, -size/2);
                         var localScale = topWall.localScale;
 	                    localScale = new Vector3(scaleFix, localScale.y, localScale.z);
@@ -86,9 +90,14 @@ public class MazeRenderer : MonoBehaviour
                 }
             }
         }
+
+        StaticBatchingUtility.Combine(batchRoot);
+        
+        GenerateLevelAssets();
 	}
-    
-	private void GenerateLevelAssets()
+
+
+    private void GenerateLevelAssets()
 	{
 		float yCorrection = -0.5f;
 		var floor = Instantiate(floorPrefab, transform);
@@ -122,5 +131,6 @@ public class MazeRenderer : MonoBehaviour
 		var chest = Instantiate(chestPrefab, transform);
 		chest.localScale = new Vector3 (0.1f, 0.1f, 0.1f);
 		chest.position = new Vector3 (-playerPos.x - 1, yCorrection, -playerPos.z - 1);
+		
 	}
 }

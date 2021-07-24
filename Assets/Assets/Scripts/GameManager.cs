@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
 	// Awake is called when the script instance is being loaded.
 	private void Awake()
 	{
+		Application.targetFrameRate = 60;
+		
 		if(File.Exists(SaveSystem.path))
 		{
 			SaveData data = SaveSystem.LoadGame();
@@ -31,7 +33,7 @@ public class GameManager : MonoBehaviour
 		instance = this;
 		SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Additive);
 	}
-	
+
 	void Update()
 	{
 		if(Input.GetKey(KeyCode.Escape))

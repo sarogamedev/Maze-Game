@@ -26,30 +26,16 @@ public class UI : MonoBehaviour
 	private int Level10x10 = 10;
 	private int Level12x12 = 12;
 	private int Level15x15 = 15;
-    private void Start()
-    {
-	    gm = FindObjectOfType<GameManager>();
-	    
-	    if (gm == null)
-	    {
-	    	Debug.LogError("There is no game manager in the scene");
-	    }
-    }
-    
-    public void SixtyFPS()
-    {
-	    Application.targetFrameRate = 60;
-    }
-    
-    public void FortyFiveFPS()
-    {
-	    Application.targetFrameRate = 45;
-    }
 
-    public void ThirtyFPS()
-    {
-	    Application.targetFrameRate = 30;
-    } 
+	private void Start()
+	{
+		gm = FindObjectOfType<GameManager>();
+
+		if (gm == null)
+		{
+			Debug.LogError("There is no game manager in the scene");
+		}
+	}
 
 	public void ExitButton()
 	{
@@ -166,21 +152,27 @@ public class UI : MonoBehaviour
 
 	public void InteractLevel()
 	{
-		if(gm.levelCount <= 12)
+		if(gm.levelCount < 12)
 		{
 			for (int i = 0; i <= gm.levelCount; i++)
 			{
 				levels1.transform.GetChild(i).GetComponent<Button>().interactable = true;
 			}
 		}
-		if(gm.levelCount > 12)
+		if(gm.levelCount >= 12)
 		{
+			/*
 			foreach (GameObject child in levels1.transform)
 			{
-				child.SetActive(true);
+				child.GetComponent<Button>().interactable = true;
 			}
-
-			for(int i = 0; i <= gm.levelCount; i++)
+			*/
+			for (int i = 0; i <= 11; i++)
+			{
+				levels1.transform.GetChild(i).GetComponent<Button>().interactable = true;
+			}
+			
+			for(int i = 0; i < gm.levelCount - 11; i++)
 			{
 				levels2.transform.GetChild(i).GetComponent<Button>().interactable = true;
 			}
