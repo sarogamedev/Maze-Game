@@ -1,43 +1,41 @@
-using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using UnityEngine;
 
-public static class SaveSystem 
+namespace Assets.Scripts
 {
-    public static string path = Application.persistentDataPath + "/MazeMania.a47";
-
-    public static void SaveGame(GameManager gameManager)
+    public static class SaveSystem 
     {
-        BinaryFormatter formatter = new BinaryFormatter();
-        FileStream stream = new FileStream(path, FileMode.Create);
+        public static readonly string path = Application.persistentDataPath + "/MazeMania.a47";
 
-        SaveData saveData = new SaveData(gameManager);
-
-        formatter.Serialize(stream, saveData);
-        stream.Close();
-    }
-
-    public static void DebugDeleteSaveData()
-    {
-       File.Delete(path);
-    }
-
-    public static SaveData LoadGame()
-    {
-        if(File.Exists(path))
+        public static void SaveGame(GameManager gameManager)
         {
-            BinaryFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream(path, FileMode.Open);
+            var formatter = new BinaryFormatter();
+            var stream = new FileStream(path, FileMode.Create);
 
-            SaveData saveData = formatter.Deserialize(stream) as SaveData;
+            var saveData = new SaveData(gameManager);
+
+            formatter.Serialize(stream, saveData);
             stream.Close();
-
-            return saveData;
         }
-        else
+
+        public static SaveData LoadGame()
         {
-            Debug.LogError("Save File Not Found In" + path);
-            return null;
+            if(File.Exists(path))
+            {
+                var formatter = new BinaryFormatter();
+                var stream = new FileStream(path, FileMode.Open);
+
+                var saveData = formatter.Deserialize(stream) as SaveData;
+                stream.Close();
+
+                return saveData;
+            }
+            else
+            {
+                Debug.LogError("Save File Not Found In" + path);
+                return null;
+            }
         }
     }
 }

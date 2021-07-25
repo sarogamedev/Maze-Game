@@ -1,34 +1,34 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ChestTrigger : MonoBehaviour
+namespace Assets.Scripts
 {
-	[SerializeField] private GameObject levelComplete;
-	
-	private void OnTriggerEnter(Collider other)
+	public class ChestTrigger : MonoBehaviour
 	{
-		if(other.CompareTag("Player"))
-		{
-			gameObject.GetComponentInParent<Animator>().SetBool("chestOpen", true);
-			Invoke("LevelComplete", 2f);
-		}
-	}
-	
-	private void LevelComplete()
-	{	
-		Debug.Log("Level Complete!");
-		var gm = FindObjectOfType<GameManager>();
-		
-		if(gm.currentLevel == gm.levelCount)
-		{
-			gm.levelCount++;
-		}
+		[SerializeField] private GameObject levelComplete;
+		private static readonly int ChestOpen = Animator.StringToHash("chestOpen");
 
-		SaveSystem.SaveGame(gm);
-		var ui = FindObjectOfType<UI>();
-		ui.DisableMe(ui.II);
-		ui.DisableMe(ui.joyStick);
-		ui.EnableMe(ui.levelComplete);
+		private void OnTriggerEnter(Collider other)
+		{
+			if (!other.CompareTag("Player")) return;
+			gameObject.GetComponentInParent<Animator>().SetBool(ChestOpen, true);
+			Invoke(nameof(LevelComplete), 2f);
+		}
+	
+		private void LevelComplete()
+		{	
+			Debug.Log("Level Complete!");
+			var gm = FindObjectOfType<GameManager>();
+		
+			if(gm.currentLevel == gm.levelCount)
+			{
+				gm.levelCount++;
+			}
+
+			SaveSystem.SaveGame(gm);
+			var ui = FindObjectOfType<UI>();
+			UI.DisableMe(ui.II);
+			UI.DisableMe(ui.joyStick);
+			UI.EnableMe(ui.levelComplete);
+		}
 	}
 }

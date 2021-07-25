@@ -1,75 +1,77 @@
 ﻿using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+namespace Assets.Scripts
 {
-    [SerializeField] private Joystick joystick;
-    [SerializeField] private float smoothMovement;
-    [SerializeField] private Rigidbody rb;
-	[SerializeField] private Animator animator;
-    
-    private Vector3 turnSmooth;
-
-    private float horizontal;
-    private float vertical;
-    
-    
-    private void Start()
+    public class PlayerMovement : MonoBehaviour
     {
-        //Cursor.lockState = CursorLockMode.Locked;
-        GameObject obj = GameObject.FindWithTag("VirtualJoystick");
-        joystick = obj.GetComponent<Joystick>();
-	    rb = GetComponent<Rigidbody>();
-	    animator = GetComponent<Animator>();
-    }
+        [SerializeField] private Joystick joystick;
+        [SerializeField] private float smoothMovement;
+        [SerializeField] private Rigidbody rb;
+        public Animator animator;
+    
+        private Vector3 turnSmooth;
+
+        private float horizontal;
+        private float vertical;
+        private static readonly int IsRunning = Animator.StringToHash("isRunning");
+
+
+        private void Start()
+        {
+            //Cursor.lockState = CursorLockMode.Locked;
+            GameObject obj = GameObject.FindWithTag("VirtualJoystick");
+            joystick = obj.GetComponent<Joystick>();
+            rb = GetComponent<Rigidbody>();
+            animator = GetComponent<Animator>();
+        }
 
 	
-    private void Update()
-    {
-        turnSmooth.x = joystick.Direction.x;
-        //turnSmooth.y = 0;
-        turnSmooth.z = joystick.Direction.y;
-        horizontal = joystick.Horizontal;
-        vertical = joystick.Vertical;
+        private void Update()
+        {
+            turnSmooth.x = joystick.Direction.x;
+            turnSmooth.z = joystick.Direction.y;
+            horizontal = joystick.Horizontal;
+            vertical = joystick.Vertical;
         
-	    if (horizontal != 0 || vertical != 0)
-        {
-		    animator.SetBool("isRunning", true);
+	    
         }
+
+        private void FixedUpdate()
+        {
+            if (vertical == 0 && horizontal == 0)
+            {
+                animator.SetBool(IsRunning, false);
+            }
         
-        if (vertical == 0 || horizontal == 0)
-        {
-	        animator.SetBool("isRunning", false);
-        }
-    }
+            if (horizontal == 0 || vertical == 0) return;
 
-    private void FixedUpdate()
-    {
-        if (horizontal == 0 || vertical == 0) return;
-
-        if (horizontal != 0)
-        {
-            HorizontalMovement();
-        }
-
-        if (vertical != 0)
-        {
-            VerticalMovement();
-        }
-    }
-
-    private void HorizontalMovement()
-    {
-        float mag = smoothMovement * Time.fixedDeltaTime;
+            animator.SetBool(IsRunning, true);
         
-        rb.transform.rotation = Quaternion.LookRotation(turnSmooth, rb.transform.up);
-        rb.transform.Translate (Vector3.right * (horizontal * mag), Space.World);
-    }
+            if (horizontal != 0)
+            {
+                HorizontalMovement();
+            }
 
-    private void VerticalMovement()
-    {
-        float mag = smoothMovement * Time.fixedDeltaTime;
+            if (vertical != 0)
+            {
+                VerticalMovement();
+            }
+        }
 
-        rb.transform.rotation = Quaternion.LookRotation(turnSmooth, rb.transform.up);
-        rb.transform.Translate (Vector3.forward * (vertical * mag), Space.World);
+        private void HorizontalMovement()
+        {
+            var mag = smoothMovement * Time.fixedDeltaTime;
+        
+            rb.transform.rotation = Quaternion.LookRotation(turnSmooth, rb.transform.up);
+            rb.transform.Translate (Vector3.right * (horizontal * mag), Space.World);
+        }
+
+        private void VerticalMovement()
+        {
+            var mag = smoothMovement * Time.fixedDeltaTime;
+
+            rb.transform.rotation = Quaternion.LookRotation(turnSmooth, rb.transform.up);
+            rb.transform.Translate (Vector3.forward * (vertical * mag), Space.World);
+        }
     }
 }
