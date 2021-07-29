@@ -15,16 +15,16 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/UI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/ChestTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/SaveSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/DebugConsole.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/SceneAutoLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/CameraMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/MazeRenderer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/DebugConsole.cs" />
+      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/UI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/ChestTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/GameManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vUhgGl83ophtM1Ls8qLTbbA5Fg" />
@@ -75,6 +75,9 @@
       <workItem from="1627054532624" duration="1064000" />
       <workItem from="1627112843726" duration="13026000" />
       <workItem from="1627178742614" duration="9839000" />
+      <workItem from="1627544434700" duration="573000" />
+      <workItem from="1627566033423" duration="7000000" />
+      <workItem from="1627573910516" duration="92000" />
     </task>
     <servers />
   </component>

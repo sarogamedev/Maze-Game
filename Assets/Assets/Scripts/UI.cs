@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Assets.Scripts
@@ -16,6 +18,8 @@ namespace Assets.Scripts
 		[SerializeField] private GameObject levels2;
 		[SerializeField] private GameObject nextButton;
 		[SerializeField] private GameObject previousButton;
+		[SerializeField] private GameObject customMazeMenu;
+		[SerializeField] private TMP_InputField customText;
 
 		public GameObject joyStick;
 		public GameObject levelComplete;
@@ -27,6 +31,10 @@ namespace Assets.Scripts
 		private int Level10x10 = 10;
 		private int Level12x12 = 12;
 		private int Level15x15 = 15;
+
+		public bool checkInput;
+		private int rows;
+		private int columns;
 
 		private void Start()
 		{
@@ -179,6 +187,36 @@ namespace Assets.Scripts
 				}
 			}
 		}
+
+		public void StringInput()
+		{
+			if (checkInput == false)
+			{
+				var tempString = customText.text;
+				rows = Convert.ToInt32(tempString);
+				columns = rows;
+				Debug.Log("Row Stored as " + rows);
+			}
+			else
+			{
+				var tempString = customText.text;
+				columns = Convert.ToInt32(tempString);
+				Debug.Log("Column Stored " + columns);
+			}
+		}
+
+		public void CustomNext()
+		{
+			if (checkInput == false)
+			{
+				checkInput = true;
+			}
+			else
+			{
+				gm.isCustomMaze = true;
+				gm.GenerateNewMaze(rows, columns);
+			}
+		}
 	
 		//Calling UI methods
 
@@ -190,6 +228,11 @@ namespace Assets.Scripts
 		public void SettingsButton()
 		{
 			EnableMe(settingsMenu);
+		}
+
+		public void CustomMazeButton()
+		{
+			EnableMe(customMazeMenu);
 		}
 	
 		public void PauseButton()
@@ -216,6 +259,11 @@ namespace Assets.Scripts
 			EnableMe(joyStick);
 			CloseMenu(pauseMenu);
 			EnableMe(II);
+		}
+
+		public void XC()
+		{
+			CloseMenu(customMazeMenu);
 		}
 	
 		public void	Next()
@@ -248,6 +296,7 @@ namespace Assets.Scripts
 		}
 	
 		//Methods to initiate UI
+		
 		public static void EnableMe(GameObject obj)
 		{
 			obj.SetActive(true);

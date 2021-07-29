@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,9 +8,9 @@ namespace Assets.Scripts
 {
 	public class GameManager : MonoBehaviour
 	{
-		[Range(1, 50)] public int width;
+		public int width;
 
-		[Range(1, 50)] public int height;
+		public int height;
 	
 		[SerializeField] private GameObject loadScreen;
 
@@ -19,6 +18,8 @@ namespace Assets.Scripts
 		public int currentLevel = 0;
 
 		private static GameManager instance;
+
+		public bool isCustomMaze;
 		
 		private void Awake()
 		{
