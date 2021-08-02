@@ -27,9 +27,6 @@ namespace Assets.Scripts
 	
 		private void LevelComplete()
 		{	
-			Debug.Log("Level Complete!");
-			
-		
 			if(gm.currentLevel == gm.levelCount)
 			{
 				gm.levelCount++;

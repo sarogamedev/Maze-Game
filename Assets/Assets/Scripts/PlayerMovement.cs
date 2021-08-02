@@ -18,7 +18,6 @@ namespace Assets.Scripts
 
         private void Start()
         {
-            //Cursor.lockState = CursorLockMode.Locked;
             GameObject obj = GameObject.FindWithTag("VirtualJoystick");
             joystick = obj.GetComponent<Joystick>();
             rb = GetComponent<Rigidbody>();

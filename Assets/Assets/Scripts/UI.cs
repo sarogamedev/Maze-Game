@@ -59,103 +59,102 @@ namespace Assets.Scripts
 	
 		public void NextLevel()
 		{	
-			if(gm.levelCount == 0)
-			{
-				One();
-			}
-			if(gm.levelCount == 1)
+			if(gm.currentLevel == 0)
 			{
 				Two();
 			}
-			if(gm.levelCount == 2)
+			else if(gm.currentLevel == 1)
 			{
 				Three();
 			}
-			if(gm.levelCount == 3)
+			else if(gm.currentLevel == 2)
 			{
 				Four();
 			}
-			if(gm.levelCount == 4)
+			else if(gm.currentLevel == 3)
 			{
 				Five();
 			}
-			if(gm.levelCount == 5)
+			else if(gm.currentLevel == 4)
 			{
 				Six();
 			}
-			if(gm.levelCount == 6)
+			else if(gm.currentLevel == 5)
 			{
 				Seven();
 			}
-			if(gm.levelCount == 7)
+			else if(gm.currentLevel == 6)
 			{
 				Eight();
 			}
-			if(gm.levelCount == 8)
+			else if(gm.currentLevel == 7)
 			{
 				Nine();
 			}
-			if(gm.levelCount == 9)
+			else if(gm.currentLevel == 8)
 			{
 				Ten();
 			}
-			if(gm.levelCount == 10)
+			else if(gm.currentLevel == 9)
 			{
 				Eleven();
 			}
-			if(gm.levelCount == 11)
+			else if(gm.currentLevel == 10)
 			{
 				Twelve();
 			}
-			if(gm.levelCount == 12)
+			else if(gm.currentLevel == 11)
 			{
 				Thirteen();
 			}
-			if(gm.levelCount == 13)
+			else if(gm.currentLevel == 12)
 			{
 				Fourteen();
 			}
-			if(gm.levelCount == 14)
+			else if(gm.currentLevel == 13)
 			{
 				Fifteen();
 			}
-			if(gm.levelCount == 15)
+			else if(gm.currentLevel == 14)
 			{
 				Sixteen();
 			}
-			if(gm.levelCount == 16)
+			else if(gm.currentLevel == 15)
 			{
 				Seventeen();
 			}
-			if(gm.levelCount == 17)
+			else if(gm.currentLevel == 16)
 			{
 				Eighteen();
 			}
-			if(gm.levelCount == 18)
+			else if(gm.currentLevel == 17)
 			{
 				Nineteen();
 			}
-			if(gm.levelCount == 19)
+			else if(gm.currentLevel == 18)
 			{
 				Twenty();
 			}
-			if(gm.levelCount == 20)
+			else if(gm.currentLevel == 19)
 			{
 				Twentyone();
 			}
-			if(gm.levelCount == 21)
+			else if(gm.currentLevel == 20)
 			{
 				TwentyTwo();
 			}
-			if(gm.levelCount == 22)
+			else if(gm.currentLevel == 21)
 			{
 				TwentyThree();
 			}
-			if(gm.levelCount == 23)
+			else if(gm.currentLevel == 22)
 			{
 				TwentyFour();
 			}
-		
+			else if(gm.currentLevel == 23)
+			{
+				//Game Complete
+			}
 	
 		}
 
