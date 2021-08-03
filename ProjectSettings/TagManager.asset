@@ -6,15 +6,17 @@ TagManager:
   tags:
   - VirtualJoystick
   - MazeRenderer
+  - Chest
+  - AI
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Obstacles
   - Water
   - UI
   - PostProcessing
-  - 
+  - GridObstacles
   - 
   - 
   - 

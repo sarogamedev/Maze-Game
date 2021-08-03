@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Pathfinding;
+using UnityEngine;
 
 namespace Assets.Scripts
 {
@@ -23,10 +24,12 @@ namespace Assets.Scripts
 		[SerializeField] private Transform chestPrefab;
 
 		[SerializeField] private GameObject batchRoot;
+		
+		private GameManager gm;
 
-		void Start()
+		void Awake()
 		{
-			var gm = FindObjectOfType<GameManager>();
+			gm = FindObjectOfType<GameManager>();
 			width = gm.width;
 			height = gm.height;
 			var maze = MazeGenerator.Generate(width, height);
@@ -36,7 +39,6 @@ namespace Assets.Scripts
 		private void Draw(WallState[,] maze)
 		{
 	
-        
 			for (var i = 0; i < width; i++)
 			{
 				for (var j = 0; j < height; j++)
@@ -137,6 +139,12 @@ namespace Assets.Scripts
 			chestPosition.y = yCorrection;
 			
 			chest.position = chestPosition;
+
+			if(!gm.isCustomMaze) return;
+			
+			FindObjectOfType<UI>().showPathButton.SetActive(false);
 		}
+
+		
 	}
 }

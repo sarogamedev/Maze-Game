@@ -131,6 +131,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3712312135627861284, guid: e07f2228f73e7f74c9f6773edcf33e5e, type: 3}
+      propertyPath: AI
+      value: 
+      objectReference: {fileID: 517950977496641411, guid: 395d0c3a09e26fd41bfa73f86bdce8a8, type: 3}
+    - target: {fileID: 3712312135627861284, guid: e07f2228f73e7f74c9f6773edcf33e5e, type: 3}
       propertyPath: levelCount
       value: 0
       objectReference: {fileID: 0}
@@ -138,6 +142,22 @@ PrefabInstance:
       propertyPath: loadScreen
       value: 
       objectReference: {fileID: 1016390729}
+    - target: {fileID: 3712312135627861284, guid: e07f2228f73e7f74c9f6773edcf33e5e, type: 3}
+      propertyPath: player.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712312135627861284, guid: e07f2228f73e7f74c9f6773edcf33e5e, type: 3}
+      propertyPath: obstacles.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712312135627861284, guid: e07f2228f73e7f74c9f6773edcf33e5e, type: 3}
+      propertyPath: gridObstacles.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712312135627861284, guid: e07f2228f73e7f74c9f6773edcf33e5e, type: 3}
+      propertyPath: showPathCoolDownTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3712312135627861285, guid: e07f2228f73e7f74c9f6773edcf33e5e, type: 3}
       propertyPath: m_Name
       value: GameManager

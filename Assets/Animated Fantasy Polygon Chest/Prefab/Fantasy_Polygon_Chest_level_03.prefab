@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5831105968368371127}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4781249206839603328}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lid_sqaush_top_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8993277538193073158}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Base_squash_top_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2912039708833159977}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: base_def_out
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 739957393119099600}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: lid_def
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 7442293409766830125}
   - component: {fileID: 1516840816812699402}
   - component: {fileID: 5646861498205574460}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Treasure_chest_lid_GEO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8096140365719131893}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: base_def
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 5682310701857974052}
   - component: {fileID: 6215774140979903817}
   - component: {fileID: 1563112103450379494}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +369,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5e091418609c6e49836910f355ac4bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelComplete: {fileID: 0}
 --- !u!1 &3101669544333353581
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,7 +378,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 979305590670505860}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Base_squash_bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -410,7 +409,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 522787672915652739}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -442,7 +441,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1851324302945964095}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: lid_MCH_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -472,7 +471,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1588050025338687396}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lid_squash_bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,7 +505,7 @@ GameObject:
   - component: {fileID: 2361037185262948765}
   - component: {fileID: 2365121673099279181}
   - component: {fileID: 2705899041496685467}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Treasure_chest_base_GEO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -631,7 +630,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 715376939700553598}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -664,7 +663,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8147271181041085856}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: lid_def_out_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -694,7 +693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6450134405106577243}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: lid_MCH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -726,9 +725,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3390743658276153202}
   - component: {fileID: 4882130077679880201}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Fantasy_Polygon_Chest_level_03
-  m_TagString: Untagged
+  m_TagString: Chest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -779,7 +778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 567908477589665431}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lid_sqaush_top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -810,7 +809,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6542724198607514160}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Base_squash_top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -841,7 +840,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2813818998154825843}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: lid_def_out
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -872,7 +871,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3902834578375471624}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: base_def_in
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -903,7 +902,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6689510343621839128}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Treasure_chest_rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -934,7 +933,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 433757534420949670}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: lid_def_in
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -965,7 +964,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5806100297687328821}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: lid_loc
   m_TagString: Untagged
   m_Icon: {fileID: 0}

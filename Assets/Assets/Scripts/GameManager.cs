@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using Pathfinding;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,6 +21,14 @@ namespace Assets.Scripts
 		private static GameManager instance;
 
 		public bool isCustomMaze;
+		
+		[SerializeField] private LayerMask gridObstacles;
+
+		[SerializeField] private GameObject AI;
+
+		public bool showPathCoolDown = true;
+
+		[SerializeField] private float showPathCoolDownTime;
 		
 		private void Awake()
 		{
@@ -73,6 +82,62 @@ namespace Assets.Scripts
 			loadScreen.SetActive(false);
 		}
 
+		public IEnumerator PathFinding()
+		{
+			AstarData data = AstarPath.active.data;
+
+			// This creates a Grid Graph
+			GridGraph gg = data.AddGraph(typeof(GridGraph)) as GridGraph;
+
+			// Setup a grid graph with some values
+			float nodeSize = 0.2f;
+
+			var center = new Vector3();
+
+			if (height % 2 == 0)
+			{
+				center.z = -0.5f;
+			}
+			else
+			{
+				center.z = 0;
+			}
+
+			if (width % 2 == 0)
+			{
+				center.x = -0.5f;
+			}
+			else
+			{
+				center.x = 0;
+			}
+
+			center.y = -0.5f;
+			
+			gg.center = center;
+
+			// Updates internal size from the above values
+			gg.SetDimensions(width * 5, height * 5, nodeSize);
+
+			gg.collision.heightMask = gg.collision.heightMask ^ (1 << LayerMask.NameToLayer("Obstacles"));
+
+			gg.collision.mask = gridObstacles;
+
+			// Scans all graphs
+			AstarPath.active.Scan();
+
+			var player = GameObject.FindWithTag("Player");
+			
+			Instantiate(AI, player.transform.position, Quaternion.identity);
+
+			showPathCoolDown = false;
+
+			yield return new WaitForSeconds(showPathCoolDownTime);
+			
+			showPathCoolDown = true;
+
+		}
+		
 		public static void LoadMainMenu()
 		{
 			SceneManager.UnloadSceneAsync("MainScene");

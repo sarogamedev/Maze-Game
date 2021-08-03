@@ -85,6 +85,10 @@ PrefabInstance:
       value: walln Variant
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c2c43e0999a80ff4da2f18ca2351e5a2, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c2c43e0999a80ff4da2f18ca2351e5a2, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}

@@ -11,6 +11,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Assets/Scripts/AIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5406A456-CF73-4443-B3D0-2A7D123287F1/b9/9ac8eeae/Void.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -19,12 +20,13 @@
       <option value="$PROJECT_DIR$/Assets/DebugConsole.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/SceneAutoLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/CameraMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/MazeRenderer.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/DebugConsole.cs" />
+      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/PlayerMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/ChestTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/AIController.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/UI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/ChestTrigger.cs" />
-      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/PlayerMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/MazeRenderer.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vUhgGl83ophtM1Ls8qLTbbA5Fg" />
@@ -79,6 +81,9 @@
       <workItem from="1627566033423" duration="7000000" />
       <workItem from="1627573910516" duration="92000" />
       <workItem from="1627622129915" duration="1866000" />
+      <workItem from="1627875507915" duration="4810000" />
+      <workItem from="1627992912712" duration="1739000" />
+      <workItem from="1627996906429" duration="6586000" />
     </task>
     <servers />
   </component>

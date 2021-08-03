@@ -24,6 +24,7 @@ namespace Assets.Scripts
 		public GameObject joyStick;
 		public GameObject levelComplete;
 		public GameObject II;
+		public GameObject showPathButton;
 	
 		private int Level4x4 = 4;
 		private int Level6x6 = 6;
@@ -204,6 +205,11 @@ namespace Assets.Scripts
 			}
 		}
 
+		public void ShowPath()
+		{
+			if(!gm.showPathCoolDown) return;
+			StartCoroutine(gm.PathFinding());
+		}
 		public void CustomNext()
 		{
 			if (checkInput == false)
