@@ -21,12 +21,12 @@
       <option value="$PROJECT_DIR$/Assets/Editor/SceneAutoLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/CameraMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Editor/DebugConsole.cs" />
-      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/PlayerMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/ChestTrigger.cs" />
-      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/AIController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/UI.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/MazeRenderer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/ChestTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/PlayerMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/AIController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vUhgGl83ophtM1Ls8qLTbbA5Fg" />
@@ -84,6 +84,8 @@
       <workItem from="1627875507915" duration="4810000" />
       <workItem from="1627992912712" duration="1739000" />
       <workItem from="1627996906429" duration="6586000" />
+      <workItem from="1628144824329" duration="1231000" />
+      <workItem from="1628164122655" duration="2629000" />
     </task>
     <servers />
   </component>

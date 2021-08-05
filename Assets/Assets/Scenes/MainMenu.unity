@@ -1139,6 +1139,8 @@ MonoBehaviour:
   joyStick: {fileID: 0}
   levelComplete: {fileID: 0}
   II: {fileID: 0}
+  showPathButton: {fileID: 0}
+  checkInput: 0
 --- !u!1 &223404303
 GameObject:
   m_ObjectHideFlags: 0
@@ -1325,7 +1327,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -261, y: 60}
+  m_AnchoredPosition: {x: -293, y: 60}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &250545153
@@ -2204,7 +2206,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -263, y: -173}
+  m_AnchoredPosition: {x: -295, y: -173}
   m_SizeDelta: {x: 200, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &379148661
@@ -2313,7 +2315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c07839bc47b833942a06b52bc7cda19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 1
+  duration: 1.25
   easeType: 0
   scale: {x: 1, y: 1, z: 1}
 --- !u!1 &380253479
@@ -3664,7 +3666,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -261, y: -65}
+  m_AnchoredPosition: {x: -293, y: -65}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &594656634
@@ -3679,7 +3681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c07839bc47b833942a06b52bc7cda19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 0.5
+  duration: 1
   easeType: 0
   scale: {x: 1, y: 1, z: 1}
 --- !u!114 &594656635
@@ -4257,8 +4259,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4, y: 54}
-  m_SizeDelta: {x: -268.49072, y: -393.0006}
+  m_AnchoredPosition: {x: 0.68429565, y: 162.77765}
+  m_SizeDelta: {x: -64.9389, y: -393.0006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &673490672
 MonoBehaviour:
@@ -4280,7 +4282,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Some random stuff
+  m_text: MAZE MANIA
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4307,13 +4309,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -5829,7 +5831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c07839bc47b833942a06b52bc7cda19a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 1
+  duration: 1.5
   easeType: 0
   scale: {x: 1, y: 1, z: 1}
 --- !u!1 &1064588928
@@ -10897,7 +10899,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -261, y: 176.25}
+  m_AnchoredPosition: {x: -293, y: 176.25}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2116624529

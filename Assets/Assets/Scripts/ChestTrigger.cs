@@ -11,9 +11,17 @@ namespace Assets.Scripts
 		private void OnTriggerEnter(Collider other)
 		{
 			if (!other.CompareTag("Player")) return;
-			gameObject.GetComponentInParent<Animator>().SetBool(ChestOpen, true);
+
+			var player = other.gameObject.GetComponent<PlayerMovement>();
+			player.enabled = false;
+			player.animator.SetBool(player.IsRunning, false);
+
 			ui = FindObjectOfType<UI>();
 			gm = FindObjectOfType<GameManager>();
+			
+			ui.showPathButton.SetActive(false);	
+			
+			gameObject.GetComponentInParent<Animator>().SetBool(ChestOpen, true);
 
 			if (gm.isCustomMaze)
 			{

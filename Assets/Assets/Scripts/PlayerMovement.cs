@@ -13,7 +13,7 @@ namespace Assets.Scripts
 
         private float horizontal;
         private float vertical;
-        private static readonly int IsRunning = Animator.StringToHash("isRunning");
+        public readonly int IsRunning = Animator.StringToHash("isRunning");
 
 
         private void Start()
@@ -31,8 +31,6 @@ namespace Assets.Scripts
             turnSmooth.z = joystick.Direction.y;
             horizontal = joystick.Horizontal;
             vertical = joystick.Vertical;
-        
-	    
         }
 
         private void FixedUpdate()

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Pathfinding;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts
@@ -40,10 +41,12 @@ namespace Assets.Scripts
 				var data = SaveSystem.LoadGame();
 				levelCount = data.level;
 			}
-
-		
+			
 			instance = this;
 			SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Additive);
+
+			RenderSettings.ambientMode = AmbientMode.Flat;
+			RenderSettings.ambientLight = new Color(0.3686275f, 0.3686275f, 0.3686275f, 1f);
 		}
 
 		private readonly List <AsyncOperation> scenesLoading = new List <AsyncOperation>();

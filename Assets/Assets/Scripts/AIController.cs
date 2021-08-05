@@ -1,4 +1,3 @@
-using System;
 using Pathfinding;
 using UnityEngine;
 
@@ -20,7 +19,7 @@ namespace Assets.Scripts
         {
             if(!ai.reachedDestination) return;
             
-            Destroy(gameObject, 2f);
+            Destroy(gameObject);
         }
     }
 }
