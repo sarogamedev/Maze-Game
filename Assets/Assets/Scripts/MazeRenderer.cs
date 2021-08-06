@@ -1,4 +1,5 @@
-﻿using Pathfinding;
+﻿using System;
+using Pathfinding;
 using UnityEngine;
 
 namespace Assets.Scripts
@@ -13,6 +14,8 @@ namespace Assets.Scripts
     
 		[SerializeField] private float scaleFix = 50f;
 
+		[SerializeField] private float mapCamSize;
+
 		[SerializeField] private Transform wallPrefab;
 
 		[SerializeField] private Transform floorPrefab;
@@ -23,9 +26,12 @@ namespace Assets.Scripts
     
 		[SerializeField] private Transform chestPrefab;
 
+		[SerializeField] private Transform mapCam;
+
 		[SerializeField] private GameObject batchRoot;
 		
 		private GameManager gm;
+
 
 		void Awake()
 		{
@@ -34,6 +40,21 @@ namespace Assets.Scripts
 			height = gm.height;
 			var maze = MazeGenerator.Generate(width, height);
 			Draw(maze);
+		}
+
+		private void Start()
+		{
+			if(!gm.isCustomMaze) return;
+			
+			var ui = FindObjectOfType<UI>();
+
+			ui.showMap.isOn = gm.showMapCustom;
+			
+			ui.showPath.isOn = gm.showPathCustom;
+			
+			ui.showPathButton.SetActive(gm.showPathCustom);
+
+			ui.map.SetActive(gm.showMapCustom);
 		}
 
 		private void Draw(WallState[,] maze)
@@ -118,10 +139,12 @@ namespace Assets.Scripts
 			chest.localScale = new Vector3 (0.1f, 0.1f, 0.1f);
 
 			var chestPosition = new Vector3();
+			var mapPosition = new Vector3();
 			
 			if (width % 2 == 0)
 			{
 				chestPosition.x = -playerPos.x - 1;
+				mapPosition.x = -0.5f;
 			}
 			else
 			{
@@ -130,6 +153,7 @@ namespace Assets.Scripts
 			if(height % 2 == 0)
 			{
 				chestPosition.z = -playerPos.z - 1;
+				mapPosition.z = -0.5f;
 			}
 			else
 			{
@@ -137,12 +161,14 @@ namespace Assets.Scripts
 			}
 
 			chestPosition.y = yCorrection;
+
+			mapPosition.y = 5f;
+			mapCam.position = mapPosition;
+			mapCam.GetComponent<Camera>().orthographicSize = Mathf.Max(width, height) * mapCamSize;
 			
 			chest.position = chestPosition;
 
-			if(!gm.isCustomMaze) return;
-			
-			FindObjectOfType<UI>().showPathButton.SetActive(false);
+
 		}
 
 		

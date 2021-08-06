@@ -25,6 +25,9 @@ namespace Assets.Scripts
 		public GameObject levelComplete;
 		public GameObject II;
 		public GameObject showPathButton;
+		public Toggle showPath;
+		public Toggle showMap;
+		public GameObject map;
 	
 		private int Level4x4 = 4;
 		private int Level6x6 = 6;
@@ -47,6 +50,12 @@ namespace Assets.Scripts
 			}
 		}
 
+		public void CustomSettingsToggle()
+		{
+			gm.showMapCustom = showMap.isOn;
+			gm.showPathCustom = showPath.isOn;
+		}
+
 		public void ExitButton()
 		{
 			GameManager.ExitApplication();
@@ -55,7 +64,7 @@ namespace Assets.Scripts
 		public void MainMenu()
 		{
 			Time.timeScale = 1f;
-			GameManager.LoadMainMenu();
+			gm.LoadMainMenu();
 		}
 	
 		public void NextLevel()
@@ -154,7 +163,7 @@ namespace Assets.Scripts
 			}
 			else if(gm.currentLevel == 23)
 			{
-				//Game Complete
+				gm.LoadMainMenu();
 			}
 	
 		}
@@ -170,12 +179,6 @@ namespace Assets.Scripts
 			}
 			if(gm.levelCount >= 12)
 			{
-				/*
-			foreach (GameObject child in levels1.transform)
-			{
-				child.GetComponent<Button>().interactable = true;
-			}
-			*/
 				for (int i = 0; i <= 11; i++)
 				{
 					levels1.transform.GetChild(i).GetComponent<Button>().interactable = true;
@@ -245,6 +248,8 @@ namespace Assets.Scripts
 			EnableMe(pauseMenu);
 			Invoke(nameof(Pause), 1f);
 			DisableMe(joyStick);
+			DisableMe(showPathButton);
+			DisableMe(map);
 			DisableMe(II);
 		}
 	
@@ -264,6 +269,16 @@ namespace Assets.Scripts
 			EnableMe(joyStick);
 			CloseMenu(pauseMenu);
 			EnableMe(II);
+
+			if (gm.showPathCustom)
+			{
+				EnableMe(showPathButton);
+			}
+
+			if (gm.showMapCustom)
+			{
+				EnableMe(map);
+			}
 		}
 
 		public void XC()

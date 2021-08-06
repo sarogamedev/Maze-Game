@@ -30,6 +30,9 @@ namespace Assets.Scripts
 		public bool showPathCoolDown = true;
 
 		[SerializeField] private float showPathCoolDownTime;
+
+		public bool showPathCustom;
+		public bool showMapCustom;
 		
 		private void Awake()
 		{
@@ -141,7 +144,7 @@ namespace Assets.Scripts
 
 		}
 		
-		public static void LoadMainMenu()
+		public void LoadMainMenu()
 		{
 			SceneManager.UnloadSceneAsync("MainScene");
 			SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Additive);

@@ -11,7 +11,7 @@ namespace Assets.Scripts
         private GameObject chest;
         void Start()
         {
-            chest = GameObject.FindWithTag("Chest");
+            chest = GameObject.FindGameObjectWithTag("Chest");
             des.target = chest.transform;
         }
 

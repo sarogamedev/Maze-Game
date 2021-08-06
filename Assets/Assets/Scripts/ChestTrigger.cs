@@ -25,7 +25,7 @@ namespace Assets.Scripts
 
 			if (gm.isCustomMaze)
 			{
-				Debug.Log("Custom Level Complete!");
+				Invoke(nameof(gm.LoadMainMenu), 2f);
 			}
 			else
 			{
@@ -35,7 +35,7 @@ namespace Assets.Scripts
 	
 		private void LevelComplete()
 		{	
-			if(gm.currentLevel == gm.levelCount)
+			if(gm.currentLevel == gm.levelCount && gm.levelCount < 23)
 			{
 				gm.levelCount++;
 			}

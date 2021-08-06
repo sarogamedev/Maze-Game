@@ -8,6 +8,7 @@ TagManager:
   - MazeRenderer
   - Chest
   - AI
+  - SettingsMenu
   layers:
   - Default
   - TransparentFX
