@@ -20,6 +20,7 @@ namespace Assets.Scripts
 		[SerializeField] private GameObject previousButton;
 		[SerializeField] private GameObject customMazeMenu;
 		[SerializeField] private TMP_InputField customText;
+		[SerializeField] private MazeRenderer mr;
 
 		public GameObject joyStick;
 		public GameObject levelComplete;
@@ -44,6 +45,7 @@ namespace Assets.Scripts
 		{
 			gm = FindObjectOfType<GameManager>();
 
+			mr = FindObjectOfType<MazeRenderer>();
 			if (gm == null)
 			{
 				Debug.LogError("There is no game manager in the scene");
@@ -52,6 +54,7 @@ namespace Assets.Scripts
 
 		public void CustomSettingsToggle()
 		{
+			if(!gm.isCustomMaze) return;
 			gm.showMapCustom = showMap.isOn;
 			gm.showPathCustom = showPath.isOn;
 		}
@@ -270,15 +273,25 @@ namespace Assets.Scripts
 			CloseMenu(pauseMenu);
 			EnableMe(II);
 
-			if (gm.showPathCustom)
+			if (gm.isCustomMaze)
+			{
+				if (gm.showPathCustom)
+				{
+					EnableMe(showPathButton);
+				}
+
+				if (gm.showMapCustom)
+				{
+					EnableMe(map);
+				}
+			}
+			else
 			{
 				EnableMe(showPathButton);
-			}
-
-			if (gm.showMapCustom)
-			{
 				EnableMe(map);
 			}
+			
+			
 		}
 
 		public void XC()

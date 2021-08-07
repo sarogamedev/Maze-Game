@@ -23,7 +23,7 @@ namespace Assets.Scripts
 
 		public bool isCustomMaze;
 		
-		[SerializeField] private LayerMask gridObstacles;
+		public LayerMask gridObstacles;
 
 		[SerializeField] private GameObject AI;
 
@@ -31,6 +31,8 @@ namespace Assets.Scripts
 
 		[SerializeField] private float showPathCoolDownTime;
 
+		private bool createGrid = true;
+		
 		public bool showPathCustom;
 		public bool showMapCustom;
 		
@@ -90,48 +92,53 @@ namespace Assets.Scripts
 
 		public IEnumerator PathFinding()
 		{
-			AstarData data = AstarPath.active.data;
-
-			// This creates a Grid Graph
-			GridGraph gg = data.AddGraph(typeof(GridGraph)) as GridGraph;
-
-			// Setup a grid graph with some values
-			float nodeSize = 0.2f;
-
-			var center = new Vector3();
-
-			if (height % 2 == 0)
+			if (createGrid)
 			{
-				center.z = -0.5f;
-			}
-			else
-			{
-				center.z = 0;
-			}
+				AstarData data = AstarPath.active.data;
 
-			if (width % 2 == 0)
-			{
-				center.x = -0.5f;
-			}
-			else
-			{
-				center.x = 0;
-			}
+				// This creates a Grid Graph
+				GridGraph gg = data.AddGraph(typeof(GridGraph)) as GridGraph;
 
-			center.y = -0.5f;
+				// Setup a grid graph with some values
+				float nodeSize = 0.2f;
+
+				var center = new Vector3();
+
+				if (height % 2 == 0)
+				{
+					center.z = -0.5f;
+				}
+				else
+				{
+					center.z = 0;
+				}
+
+				if (width % 2 == 0)
+				{
+					center.x = -0.5f;
+				}
+				else
+				{
+					center.x = 0;
+				}
+
+				center.y = -0.5f;
 			
-			gg.center = center;
+				gg.center = center;
 
-			// Updates internal size from the above values
-			gg.SetDimensions(width * 5, height * 5, nodeSize);
+				// Updates internal size from the above values
+				gg.SetDimensions(width * 5, height * 5, nodeSize);
 
-			gg.collision.heightMask = gg.collision.heightMask ^ (1 << LayerMask.NameToLayer("Obstacles"));
+				gg.collision.heightMask = gg.collision.heightMask ^ (1 << LayerMask.NameToLayer("Obstacles"));
 
-			gg.collision.mask = gridObstacles;
+				gg.collision.mask = gridObstacles;
 
-			// Scans all graphs
-			AstarPath.active.Scan();
+				// Scans all graphs
+				AstarPath.active.Scan();
+			}
 
+			createGrid = false;
+			
 			var player = GameObject.FindWithTag("Player");
 			
 			Instantiate(AI, player.transform.position, Quaternion.identity);

@@ -44,19 +44,24 @@ namespace Assets.Scripts
 
 		private void Start()
 		{
-			if(!gm.isCustomMaze) return;
-			
-			var ui = FindObjectOfType<UI>();
+			if (gm.isCustomMaze)
+			{
+				var ui = FindObjectOfType<UI>();
 
-			ui.showMap.isOn = gm.showMapCustom;
+				ui.showMap.isOn = gm.showMapCustom;
 			
-			ui.showPath.isOn = gm.showPathCustom;
+				ui.showPath.isOn = gm.showPathCustom;
 			
-			ui.showPathButton.SetActive(gm.showPathCustom);
+				ui.showPathButton.SetActive(gm.showPathCustom);
 
-			ui.map.SetActive(gm.showMapCustom);
+				ui.map.SetActive(gm.showMapCustom);
+			}
+			
+			Grid();
 		}
 
+		
+		
 		private void Draw(WallState[,] maze)
 		{
 	
@@ -115,8 +120,7 @@ namespace Assets.Scripts
         
 			GenerateLevelAssets();
 		}
-
-
+		
 		private void GenerateLevelAssets()
 		{
 			const float yCorrection = -0.5f;
@@ -167,10 +171,13 @@ namespace Assets.Scripts
 			mapCam.GetComponent<Camera>().orthographicSize = Mathf.Max(width, height) * mapCamSize;
 			
 			chest.position = chestPosition;
-
-
+			
 		}
 
-		
+		private void Grid()
+		{
+			
+
+		}
 	}
 }

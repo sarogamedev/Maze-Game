@@ -1281,6 +1281,7 @@ MonoBehaviour:
   previousButton: {fileID: 825011180}
   customMazeMenu: {fileID: 88295438}
   customText: {fileID: 1225387597}
+  mr: {fileID: 0}
   joyStick: {fileID: 0}
   levelComplete: {fileID: 0}
   II: {fileID: 0}

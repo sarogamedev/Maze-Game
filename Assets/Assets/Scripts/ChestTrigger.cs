@@ -23,14 +23,7 @@ namespace Assets.Scripts
 			
 			gameObject.GetComponentInParent<Animator>().SetBool(ChestOpen, true);
 
-			if (gm.isCustomMaze)
-			{
-				Invoke(nameof(gm.LoadMainMenu), 2f);
-			}
-			else
-			{
-				Invoke(nameof(LevelComplete), 2f);
-			}
+			Invoke(gm.isCustomMaze ? nameof(gm.LoadMainMenu) : nameof(LevelComplete), 1f);
 		}
 	
 		private void LevelComplete()

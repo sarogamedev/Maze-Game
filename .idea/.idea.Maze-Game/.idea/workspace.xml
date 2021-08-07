@@ -25,10 +25,10 @@
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/MiniMap.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/AIController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/ChestTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/UI.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/MazeRenderer.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/UI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/ChestTrigger.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vUhgGl83ophtM1Ls8qLTbbA5Fg" />
@@ -90,6 +90,9 @@
       <workItem from="1628164122655" duration="2629000" />
       <workItem from="1628226448960" duration="2604000" />
       <workItem from="1628249930697" duration="6023000" />
+      <workItem from="1628329361245" duration="684000" />
+      <workItem from="1628332640932" duration="2685000" />
+      <workItem from="1628337237610" duration="727000" />
     </task>
     <servers />
   </component>
