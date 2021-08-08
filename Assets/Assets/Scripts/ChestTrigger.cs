@@ -23,9 +23,15 @@ namespace Assets.Scripts
 			
 			gameObject.GetComponentInParent<Animator>().SetBool(ChestOpen, true);
 
-			Invoke(gm.isCustomMaze ? nameof(gm.LoadMainMenu) : nameof(LevelComplete), 1f);
+			Invoke(gm.isCustomMaze ? nameof(CustomLevelComplete) : nameof(LevelComplete), 1f);
+			
 		}
-	
+
+		private void CustomLevelComplete()
+		{
+			gm.LoadMainMenu();
+		}
+		
 		private void LevelComplete()
 		{	
 			if(gm.currentLevel == gm.levelCount && gm.levelCount < 23)

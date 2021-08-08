@@ -1,6 +1,4 @@
-﻿using System;
-using Pathfinding;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets.Scripts
 {
@@ -32,7 +30,6 @@ namespace Assets.Scripts
 		
 		private GameManager gm;
 
-
 		void Awake()
 		{
 			gm = FindObjectOfType<GameManager>();
@@ -57,7 +54,6 @@ namespace Assets.Scripts
 				ui.map.SetActive(gm.showMapCustom);
 			}
 			
-			Grid();
 		}
 
 		
@@ -141,43 +137,54 @@ namespace Assets.Scripts
         
 			var chest = Instantiate(chestPrefab, transform);
 			chest.localScale = new Vector3 (0.1f, 0.1f, 0.1f);
+			
+			var chestPosition1 = new Vector3();
+			var chestPosition2 = new Vector3();
+			var chestPosition3 = new Vector3();
 
-			var chestPosition = new Vector3();
+			
+			
 			var mapPosition = new Vector3();
 			
 			if (width % 2 == 0)
 			{
-				chestPosition.x = -playerPos.x - 1;
+				chestPosition1.x = -playerPos.x - 1;
+				chestPosition2.x = playerPos.x;
+				chestPosition3.x = -playerPos.x - 1;
 				mapPosition.x = -0.5f;
 			}
 			else
 			{
-				chestPosition.x = -playerPos.x;
+				chestPosition1.x = -playerPos.x;
+				chestPosition2.x = playerPos.x;
+				chestPosition3.x = -playerPos.x;
 			}
 			if(height % 2 == 0)
 			{
-				chestPosition.z = -playerPos.z - 1;
+				chestPosition1.z = -playerPos.z - 1;
+				chestPosition2.z = -playerPos.z - 1;
+				chestPosition3.z = playerPos.z;
 				mapPosition.z = -0.5f;
 			}
 			else
 			{
-				chestPosition.z = -playerPos.z;
+				chestPosition1.z = -playerPos.z;
+				chestPosition2.z = -playerPos.z;
+				chestPosition3.z = playerPos.z;
 			}
 
-			chestPosition.y = yCorrection;
+			chestPosition1.y = yCorrection;
+			chestPosition2.y = yCorrection;
+			chestPosition3.y = yCorrection;
 
+			Vector3[] chestPositions = {chestPosition1, chestPosition2, chestPosition3};
+			
+			chest.position = chestPositions[Random.Range(0, chestPositions.Length)];
+			
 			mapPosition.y = 5f;
 			mapCam.position = mapPosition;
 			mapCam.GetComponent<Camera>().orthographicSize = Mathf.Max(width, height) * mapCamSize;
 			
-			chest.position = chestPosition;
-			
-		}
-
-		private void Grid()
-		{
-			
-
 		}
 	}
 }
