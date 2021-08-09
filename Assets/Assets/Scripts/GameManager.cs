@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using Pathfinding;
@@ -75,6 +76,12 @@ namespace Assets.Scripts
 		
 			scenesLoading.Add (SceneManager.LoadSceneAsync("MainScene", LoadSceneMode.Additive));
 
+			createGrid = true;
+			
+			StopAllCoroutines();
+
+			showPathCoolDown = true;
+			
 			StartCoroutine(GetSceneLoadProgress());
 		}
     

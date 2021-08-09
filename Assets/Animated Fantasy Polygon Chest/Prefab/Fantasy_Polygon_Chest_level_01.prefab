@@ -955,6 +955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5e091418609c6e49836910f355ac4bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chestParticle: {fileID: 3576924614362489592, guid: 4a919ff208278c347a4582e77e55ed83, type: 3}
 --- !u!1 &8303955562638549228
 GameObject:
   m_ObjectHideFlags: 0

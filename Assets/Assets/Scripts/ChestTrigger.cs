@@ -6,12 +6,15 @@ namespace Assets.Scripts
 	{
 		private UI ui;
 		private GameManager gm;
+
+		[SerializeField] private GameObject chestParticle;
 		private static readonly int ChestOpen = Animator.StringToHash("chestOpen");
 
 		private void OnTriggerEnter(Collider other)
 		{
 			if (!other.CompareTag("Player")) return;
 
+			Instantiate(chestParticle, transform);
 			var player = other.gameObject.GetComponent<PlayerMovement>();
 			player.enabled = false;
 			player.animator.SetBool(player.IsRunning, false);
@@ -23,7 +26,7 @@ namespace Assets.Scripts
 			
 			gameObject.GetComponentInParent<Animator>().SetBool(ChestOpen, true);
 
-			Invoke(gm.isCustomMaze ? nameof(CustomLevelComplete) : nameof(LevelComplete), 1f);
+			Invoke(gm.isCustomMaze ? nameof(CustomLevelComplete) : nameof(LevelComplete), 2f);
 			
 		}
 

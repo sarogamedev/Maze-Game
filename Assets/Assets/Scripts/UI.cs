@@ -214,7 +214,9 @@ namespace Assets.Scripts
 		public void ShowPath()
 		{
 			if(!gm.showPathCoolDown) return;
+
 			StartCoroutine(gm.PathFinding());
+
 		}
 		public void CustomNext()
 		{
