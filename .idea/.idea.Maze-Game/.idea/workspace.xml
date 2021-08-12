@@ -29,6 +29,7 @@
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/ChestTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/UI.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/CountDownTimer.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vUhgGl83ophtM1Ls8qLTbbA5Fg" />
@@ -98,6 +99,7 @@
       <workItem from="1628425971150" duration="596000" />
       <workItem from="1628482502031" duration="2845000" />
       <workItem from="1628509239792" duration="988000" />
+      <workItem from="1628665937705" duration="1199000" />
     </task>
     <servers />
   </component>
