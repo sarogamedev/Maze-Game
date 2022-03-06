@@ -1,0 +1,1865 @@
+Using pre-set license
+Built from '2021.2/staging' branch; Version is '2021.2.8f1 (d0e5f0a7b06a) revision 13690352'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 8113 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.2.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Saravana/Documents/Unity Projects/Maze-Game
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+52791
+Successfully changed project path to: C:/Users/Saravana/Documents/Unity Projects/Maze-Game
+C:/Users/Saravana/Documents/Unity Projects/Maze-Game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 60.45 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.2.8f1 (d0e5f0a7b06a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Saravana/Documents/Unity Projects/Maze-Game/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f0a)
+    Vendor:   NVIDIA
+    VRAM:     3961 MB
+    Driver:   30.0.15.1165
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56020
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.8f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.005164 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 58.29 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.611 seconds
+Domain Reload Profiling:
+	ReloadAssembly (612ms)
+		BeginReloadAssembly (68ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (466ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (110ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (261ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (58ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (135ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005581 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.393 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1394ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (1184ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (198ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (821ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (717ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.81 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2447 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (1.3 MB). Loaded Objects now: 2927.
+Memory consumption went from 209.4 MB to 208.1 MB.
+Total: 4.028400 ms (FindLiveObjects: 0.345300 ms CreateObjectMapping: 0.175400 ms MarkObjects: 3.029100 ms  DeleteObjects: 0.476900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 74283.358675 seconds.
+  path: Assets/UI - BUILDER/Prefabs/1. Fundamental UI Elements/ColorSchemes/__ColorsPalettePreview.prefab
+  artifactKey: Guid(21e3c6a2b8f175246bdd8936feef47f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Prefabs/1. Fundamental UI Elements/ColorSchemes/__ColorsPalettePreview.prefab using Guid(21e3c6a2b8f175246bdd8936feef47f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c74e37cc3fa12d44e5532e7ef15c49d') in 0.087559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 169.437774 seconds.
+  path: Assets/UI/UIpack/Font/kenvector_future SDF.asset
+  artifactKey: Guid(153332a99b7c1d348bf24e4a1aad3c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UIpack/Font/kenvector_future SDF.asset using Guid(153332a99b7c1d348bf24e4a1aad3c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1478bc8cbd3a8f43169e77466869be6f') in 0.105740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.493082 seconds.
+  path: Assets/UI/UIpack/Font/kenvector_future_thin SDF.asset
+  artifactKey: Guid(ea891402bf3721641836c799e587448f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UIpack/Font/kenvector_future_thin SDF.asset using Guid(ea891402bf3721641836c799e587448f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '128f63a47030e7109094029ee90062a8') in 0.040528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 42.191801 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47553107f11d0ecb1521e7d9206ce121') in 0.076355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82f66d066634a138b787bc57a8cb7d18') in 0.049194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 300.950023 seconds.
+  path: Assets/UI/UIpack/Font/kenvector_future SDF.asset
+  artifactKey: Guid(153332a99b7c1d348bf24e4a1aad3c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UIpack/Font/kenvector_future SDF.asset using Guid(153332a99b7c1d348bf24e4a1aad3c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d22318a74cc8585186b9529788f7986') in 0.046347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/UI/UIpack/Font/kenvector_future_thin SDF.asset
+  artifactKey: Guid(ea891402bf3721641836c799e587448f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UIpack/Font/kenvector_future_thin SDF.asset using Guid(ea891402bf3721641836c799e587448f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c957d9da5b1f50ca4dec445218b9aec2') in 0.038348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1189.967501 seconds.
+  path: Assets/UI/UIpack/Font/kenvector_future_thin SDF.asset
+  artifactKey: Guid(ea891402bf3721641836c799e587448f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UIpack/Font/kenvector_future_thin SDF.asset using Guid(ea891402bf3721641836c799e587448f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c2dac376b055d89f4ea02eb31867d7d') in 0.050562 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 838.806717 seconds.
+  path: Assets/Assets/Scenes/MainMenu.unity
+  artifactKey: Guid(2ef0af59b80b869478c5f73802658b29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Scenes/MainMenu.unity using Guid(2ef0af59b80b869478c5f73802658b29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c817d4101b1127e24eba4f57786fb939') in 0.009829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 81.062991 seconds.
+  path: Assets/LeanTween/Examples/Material/Futuro_WindowBack.psd
+  artifactKey: Guid(678c92572cc724845a460c87117f5353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeanTween/Examples/Material/Futuro_WindowBack.psd using Guid(678c92572cc724845a460c87117f5353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b8985270e5d81cf8424a73e67b71fb') in 0.049690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.145598 seconds.
+  path: Assets/UI/UIpack/PNG/grey_panel.png
+  artifactKey: Guid(26d372912ad64bb479c8cbea543467b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UIpack/PNG/grey_panel.png using Guid(26d372912ad64bb479c8cbea543467b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3894e80646aebf7909944708b855783') in 0.040542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 640.305480 seconds.
+  path: Assets/UI/UIpack/Font/kenvector_future SDF.asset
+  artifactKey: Guid(153332a99b7c1d348bf24e4a1aad3c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UIpack/Font/kenvector_future SDF.asset using Guid(153332a99b7c1d348bf24e4a1aad3c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c466df0e0c20f747f3d1884a7133ae0') in 0.041949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 702.562150 seconds.
+  path: Assets/UI/UIpack/Font/kenvector_future_thin SDF.asset
+  artifactKey: Guid(ea891402bf3721641836c799e587448f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UIpack/Font/kenvector_future_thin SDF.asset using Guid(ea891402bf3721641836c799e587448f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be9b10c778689fd0a6cfb17b7cb8da25') in 0.033562 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 190.324460 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Standard/StandartIcon_4.png
+  artifactKey: Guid(08ca34640bba30848ae6c10230af1c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Standard/StandartIcon_4.png using Guid(08ca34640bba30848ae6c10230af1c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f470648ba9aee5c45133bda6a87e1c8d') in 0.054418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Standard/StandartIcon_6.png
+  artifactKey: Guid(7b75ef87987357a498ea66434c025d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Standard/StandartIcon_6.png using Guid(7b75ef87987357a498ea66434c025d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf50d479d8b9e866dd6adc62ce2508fb') in 0.025169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Standard/StandartIcon_6.png
+  artifactKey: Guid(7dad7c25ef7184292b9895cf932cdee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Standard/StandartIcon_6.png using Guid(7dad7c25ef7184292b9895cf932cdee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d0b7ff05a5a54c498e5c2fb6cc66dfb') in 0.023250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Standard/StandartIcon_4.png
+  artifactKey: Guid(6c735e7fc0fdc4a058ac3068c1e88c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Standard/StandartIcon_4.png using Guid(6c735e7fc0fdc4a058ac3068c1e88c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfcc7fbfc32057301041b7f4705a8bec') in 0.022325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Standard/StandartIcon_4.png
+  artifactKey: Guid(5a82a194affa7cc4387aaee4ccec120a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Standard/StandartIcon_4.png using Guid(5a82a194affa7cc4387aaee4ccec120a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cf54cb4e4c7d61a3433f5a9266a4e12') in 0.023271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Standard/StandartIcon_5.png
+  artifactKey: Guid(c8ce6dfe18bd01344b2b41b47b4fd692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Standard/StandartIcon_5.png using Guid(c8ce6dfe18bd01344b2b41b47b4fd692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afef9cbf865f683820c74371bc028913') in 0.050654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Standard/StandartIcon_5.png
+  artifactKey: Guid(ce11b8d9965d4482984f5206bc89ac4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Standard/StandartIcon_5.png using Guid(ce11b8d9965d4482984f5206bc89ac4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec106137cc67057045e5df1a1a51f972') in 0.023292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Standard/StandartIcon_6.png
+  artifactKey: Guid(fff689683bd2b54408c3f694aa40af47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Standard/StandartIcon_6.png using Guid(fff689683bd2b54408c3f694aa40af47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa9d025397aefbda0357d034d3a036d5') in 0.090871 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Standard/StandartIcon_5.png
+  artifactKey: Guid(410f86cf3f2b6bc4e8f81b24a7b7ead9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Standard/StandartIcon_5.png using Guid(410f86cf3f2b6bc4e8f81b24a7b7ead9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1ca8a23c96effce3076f6cfffbe6478') in 0.030371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 123.684156 seconds.
+  path: Assets/UI - BUILDER/Source Files/Panels/Panels@2x-assets/PopUpArrows/PopUpArrowsRadius_34px_Stroke_12px.png
+  artifactKey: Guid(0ac5f5388eee0d54ab34ce8ef3d98d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Panels/Panels@2x-assets/PopUpArrows/PopUpArrowsRadius_34px_Stroke_12px.png using Guid(0ac5f5388eee0d54ab34ce8ef3d98d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bad1565f785c7e1722926dab9b6d4b2') in 0.034078 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/UI - BUILDER/Source Files/Panels/Panels@1x-assets/PopUpArrows/PopUpArrowsRadius_34px_Stroke_12px.png
+  artifactKey: Guid(e382d0cea955991469af6c969fc7560b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Panels/Panels@1x-assets/PopUpArrows/PopUpArrowsRadius_34px_Stroke_12px.png using Guid(e382d0cea955991469af6c969fc7560b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4a9c3de5d4588ba300cc1161f8a20c4') in 0.026347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/UI - BUILDER/Source Files/Panels/Panels@2x-assets/PopUpArrows/PopUpArrowsRadius_34px_Stroke_16px.png
+  artifactKey: Guid(99b54f6749128b04790974326ddbbc1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Panels/Panels@2x-assets/PopUpArrows/PopUpArrowsRadius_34px_Stroke_16px.png using Guid(99b54f6749128b04790974326ddbbc1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88a3077c205f0c19b64bd8acb6b3906b') in 0.028493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/UI - BUILDER/Source Files/Photography ┬⌐ beffio Tom Lassota/Poznan Poland Fog View - ┬⌐ beffio Tom Lassota.jpg
+  artifactKey: Guid(7fc19a2462b379349a91d6a9b4b58543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Photography ┬⌐ beffio Tom Lassota/Poznan Poland Fog View - ┬⌐ beffio Tom Lassota.jpg using Guid(7fc19a2462b379349a91d6a9b4b58543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16060b85681587aecfbd79ea86250e37') in 0.315353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/LeanTween/Examples/Textures/PowerUpStar.png
+  artifactKey: Guid(70141d51621e24facbca9196bbde84b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LeanTween/Examples/Textures/PowerUpStar.png using Guid(70141d51621e24facbca9196bbde84b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62574c3a5fd5955e4903b17afd21220f') in 0.029281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/UI - BUILDER/Source Files/Panels/Panels@1x-assets/PopUpArrows/PopUpArrowsRadius_34px_Stroke_20px.png
+  artifactKey: Guid(a581c6f5c32cb5848b827f4ae0ec60ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Panels/Panels@1x-assets/PopUpArrows/PopUpArrowsRadius_34px_Stroke_20px.png using Guid(a581c6f5c32cb5848b827f4ae0ec60ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2a310d958bc6babefeb61d451f05d7a') in 0.027625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/UI - BUILDER/Source Files/Photography ┬⌐ beffio Tom Lassota/Poznan Poland Fog - ┬⌐ beffio Tom Lassota.jpg
+  artifactKey: Guid(fd006f2b3f251e34aa227649280d8cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Photography ┬⌐ beffio Tom Lassota/Poznan Poland Fog - ┬⌐ beffio Tom Lassota.jpg using Guid(fd006f2b3f251e34aa227649280d8cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd4abf58f5afb087c17869dde3cd2858') in 0.285504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Social/SocialIcon_2.png
+  artifactKey: Guid(79fabf077d6feef4eb7e59bf71227f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Social/SocialIcon_2.png using Guid(79fabf077d6feef4eb7e59bf71227f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7b080924b7bd52bcea330d35b9d07ca') in 0.032186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Social/SocialIcon_2.png
+  artifactKey: Guid(325ed189cd9274f009c82e848a1fb810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Social/SocialIcon_2.png using Guid(325ed189cd9274f009c82e848a1fb810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5101bd66c87d784a35a67c76dfa74c4c') in 0.022495 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Social/SocialIcon_2.png
+  artifactKey: Guid(cbf852b8380f1ee418f37bc85e1d009f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Social/SocialIcon_2.png using Guid(cbf852b8380f1ee418f37bc85e1d009f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e475550b2518b29ef2b5ecaabad27949') in 0.045765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Social/SocialIcon_3.png
+  artifactKey: Guid(0ab416a46d36c034b95f447753c625cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Social/SocialIcon_3.png using Guid(0ab416a46d36c034b95f447753c625cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba9553947c9d2cd324405e24063a3d5') in 0.024616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Social/SocialIcon_1.png
+  artifactKey: Guid(e6e44fa8ad6122049bebdbc5c4b832b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Social/SocialIcon_1.png using Guid(e6e44fa8ad6122049bebdbc5c4b832b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0e61760d2a063258d63868c88e222bf') in 0.024477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/All Settings Pro/Content/Art/UI/RightArrow-3.psd
+  artifactKey: Guid(fe2d6a9f60ea1cb458b573cb4942db89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/All Settings Pro/Content/Art/UI/RightArrow-3.psd using Guid(fe2d6a9f60ea1cb458b573cb4942db89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315edb4dda8abb1a71cedc33db29d05d') in 0.028222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/All Settings Pro/Content/Art/UI/Save.png
+  artifactKey: Guid(d01ad3b88c379084781cb58f3c352563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/All Settings Pro/Content/Art/UI/Save.png using Guid(d01ad3b88c379084781cb58f3c352563) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3770111746511be9dfb053ab1e8cda8a') in 0.024017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Social/SocialIcon_1.png
+  artifactKey: Guid(579fdb79719fdc84b938664c4e7d84ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Social/SocialIcon_1.png using Guid(579fdb79719fdc84b938664c4e7d84ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ab83ef8a58e3075d59afeaf63c9042d') in 0.047536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Social/SocialIcon_3.png
+  artifactKey: Guid(c4d2096d177fd4bc7947d5dafbd51e56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Social/SocialIcon_3.png using Guid(c4d2096d177fd4bc7947d5dafbd51e56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a0930e091cb4aeb4f2c35f0d4fccd21') in 0.021584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Social/SocialIcon_5.png
+  artifactKey: Guid(aada5fa6c6a63b24fb8e99163fcaee02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Social/SocialIcon_5.png using Guid(aada5fa6c6a63b24fb8e99163fcaee02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd6ef971703a993fac02d54df0e08785') in 0.024062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Social/SocialIcon_5.png
+  artifactKey: Guid(51574307cfd2ed749a3978279c9d144f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Social/SocialIcon_5.png using Guid(51574307cfd2ed749a3978279c9d144f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '950b7ee80c70df5b5c7e572781b3b482') in 0.040446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/UI - BUILDER/Source Files/Photography ┬⌐ beffio Tom Lassota/Poznan Poland Motor Show - ┬⌐ beffio Tom Lassota.jpg
+  artifactKey: Guid(11619e2e053004f64a8e9c75c0b74b0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Photography ┬⌐ beffio Tom Lassota/Poznan Poland Motor Show - ┬⌐ beffio Tom Lassota.jpg using Guid(11619e2e053004f64a8e9c75c0b74b0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '694d57434ee475d19eac8ed3a0d35aff') in 0.098905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Social/SocialIcon_8.png
+  artifactKey: Guid(f2b82682331cd544d83da58eea49d2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Social/SocialIcon_8.png using Guid(f2b82682331cd544d83da58eea49d2a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71452bf71957ebcd8d81eef4c6737009') in 0.030853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Standard/StandartIcon_1.png
+  artifactKey: Guid(048f2aeaa99de46f19396a5574dfe330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Standard/StandartIcon_1.png using Guid(048f2aeaa99de46f19396a5574dfe330) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '600026f5dea4ff7d44db76f6e7b55e88') in 0.022193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Standard/StandartIcon_2.png
+  artifactKey: Guid(360eddc76ff9a2e4aab7d53820e126c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Standard/StandartIcon_2.png using Guid(360eddc76ff9a2e4aab7d53820e126c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcb52193ecd0ef137bb2ab3685756247') in 0.022989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Social/SocialIcon_8.png
+  artifactKey: Guid(516ce5b910c964169b3035686f077022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Social/SocialIcon_8.png using Guid(516ce5b910c964169b3035686f077022) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efb575b30fa88c67498da884f8f06c56') in 0.021031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Social/SocialIcon_7.png
+  artifactKey: Guid(8cc79d5cc413ba745a7f0c52e3dbae76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Social/SocialIcon_7.png using Guid(8cc79d5cc413ba745a7f0c52e3dbae76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eadcaa347a90abad44d4d7c9cc8cebd') in 0.022922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Standard/StandartIcon_3.png
+  artifactKey: Guid(0517bc6efa2429a499b08a224761873b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Standard/StandartIcon_3.png using Guid(0517bc6efa2429a499b08a224761873b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1837992e3bc511e0b64e5a19aaee96c9') in 0.048326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Social/SocialIcon_6.png
+  artifactKey: Guid(737bd1d32b53e42498243b3d25a2533a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Social/SocialIcon_6.png using Guid(737bd1d32b53e42498243b3d25a2533a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6706efadcc9b9ea8105d8b3b387c2cf3') in 0.043156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Social/SocialIcon_1.png
+  artifactKey: Guid(bb759b37357ab4d84929a6866cd94dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Social/SocialIcon_1.png using Guid(bb759b37357ab4d84929a6866cd94dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e49d861f1ce4102eb8322ca71dff51b7') in 0.021510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Standard/StandartIcon_1.png
+  artifactKey: Guid(ba7905b496db99149aa304422602d4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Standard/StandartIcon_1.png using Guid(ba7905b496db99149aa304422602d4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cbdf11e9877b3ec3ca66cfc0053a7ae') in 0.042787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Social/SocialIcon_4.png
+  artifactKey: Guid(a626fb5aadfa63e45aaf9879ea1ff048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Social/SocialIcon_4.png using Guid(a626fb5aadfa63e45aaf9879ea1ff048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d263cb55c604578a82a725b96a61435') in 0.024600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Standard/StandartIcon_3.png
+  artifactKey: Guid(a34eb6ffd96e42642ba9e7cdebde6bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Standard/StandartIcon_3.png using Guid(a34eb6ffd96e42642ba9e7cdebde6bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '699e77975207b295371c4504d09be237') in 0.021248 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Social/SocialIcon_5.png
+  artifactKey: Guid(ab566f85958e34d9b9c17c9719057cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Social/SocialIcon_5.png using Guid(ab566f85958e34d9b9c17c9719057cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '808e10c1be3576502dd982508e78338e') in 0.020893 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Social/SocialIcon_7.png
+  artifactKey: Guid(7a13a3ef0fd0b49d5804e291aef633b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Social/SocialIcon_7.png using Guid(7a13a3ef0fd0b49d5804e291aef633b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecd4739ca422f8ec25949c2cedae3252') in 0.065782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Social/SocialIcon_8.png
+  artifactKey: Guid(5eec15db3f0ea9946a771ed254eb843b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Social/SocialIcon_8.png using Guid(5eec15db3f0ea9946a771ed254eb843b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed502d21f8657e226ab1c90d03bfbab') in 0.042813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Standard/StandartIcon_1.png
+  artifactKey: Guid(3eab03ed576826847b73156ea9ace68e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Standard/StandartIcon_1.png using Guid(3eab03ed576826847b73156ea9ace68e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad8a75c4875efd9235c1e02fb39fa3cb') in 0.022806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Social/SocialIcon_4.png
+  artifactKey: Guid(7a152c65b345a493e8265fc2b04cbe6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Social/SocialIcon_4.png using Guid(7a152c65b345a493e8265fc2b04cbe6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efce6e6da2d42bd0ad91d5b2ead9129e') in 0.022232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Social/SocialIcon_6.png
+  artifactKey: Guid(04cedf8d0321948919a306ac0f3be9bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Social/SocialIcon_6.png using Guid(04cedf8d0321948919a306ac0f3be9bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aad62c2af30a9038dbe3323d41367268') in 0.022237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Standard/StandartIcon_2.png
+  artifactKey: Guid(865e2e69e0401f34fa6ceaad3f5a6073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Standard/StandartIcon_2.png using Guid(865e2e69e0401f34fa6ceaad3f5a6073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1f2236ec49a437a62ba0bd022944c4d') in 0.039541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Standard/StandartIcon_2.png
+  artifactKey: Guid(93ab86b6bada4487bb874e6e3d925f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Standard/StandartIcon_2.png using Guid(93ab86b6bada4487bb874e6e3d925f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1822aef27138c5ed68058a733edd3bf2') in 0.022311 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Social/SocialIcon_4.png
+  artifactKey: Guid(bcc69a72c2fb02d4e9682051deb6f826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Social/SocialIcon_4.png using Guid(bcc69a72c2fb02d4e9682051deb6f826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c75ea30b7f68ff8a6acfeab05afc9e9') in 0.033350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Social/SocialIcon_7.png
+  artifactKey: Guid(4f7e8bb8e9468c44b87c533ced98af9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Social/SocialIcon_7.png using Guid(4f7e8bb8e9468c44b87c533ced98af9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1ed247e617cfc29b7106b7cd7425540') in 0.040637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Standard/StandartIcon_3.png
+  artifactKey: Guid(8e7c17085c2bd453db2433cb304266b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@1x-assets/Standard/StandartIcon_3.png using Guid(8e7c17085c2bd453db2433cb304266b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6701704fe97f85d3aa30c4c127cbe0ac') in 0.020310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Social/SocialIcon_3.png
+  artifactKey: Guid(0a82a61a06cc6a24aa3374cb6872cae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Social/SocialIcon_3.png using Guid(0a82a61a06cc6a24aa3374cb6872cae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4128c0c9d572f8865ec3c3e4b5f41d93') in 0.037438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Social/SocialIcon_6.png
+  artifactKey: Guid(76e58eb6024b7734ebc2887b3810871f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Icons/Icons@2x-assets/Social/SocialIcon_6.png using Guid(76e58eb6024b7734ebc2887b3810871f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a23d1734975e60cbb40b57a42d27cee') in 0.022565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/UI - BUILDER/Source Files/Panels/Panels@2x-assets/PopUpArrows/PopUpArrowsRadius_34px_Stroke_20px.png
+  artifactKey: Guid(a5e72b6f93eb14448bc76114bdbbd2c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Panels/Panels@2x-assets/PopUpArrows/PopUpArrowsRadius_34px_Stroke_20px.png using Guid(a5e72b6f93eb14448bc76114bdbbd2c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53de665aadd6fd0d20b7247519a2f12d') in 0.023918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/UI - BUILDER/Source Files/Panels/Panels@1x-assets/PopUpArrows/PopUpArrowsRadius_34px_Stroke_16px.png
+  artifactKey: Guid(fb5ff2a1f2238664ebc3c391db3fd61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI - BUILDER/Source Files/Panels/Panels@1x-assets/PopUpArrows/PopUpArrowsRadius_34px_Stroke_16px.png using Guid(fb5ff2a1f2238664ebc3c391db3fd61e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c8172feba04473646fd01214b4e64ce') in 0.023593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 194.801833 seconds.
+  path: Assets/UI/UIpack/Font/kenvector_future_thin SDF.asset
+  artifactKey: Guid(ea891402bf3721641836c799e587448f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UIpack/Font/kenvector_future_thin SDF.asset using Guid(ea891402bf3721641836c799e587448f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12dc8574551f89ec11503ef64039dea8') in 0.058402 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005637 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.273 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1274ms)
+		BeginReloadAssembly (167ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (62ms)
+		EndReloadAssembly (1007ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (205ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (452ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (346ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.97 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2450 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (1.3 MB). Loaded Objects now: 4065.
+Memory consumption went from 289.9 MB to 288.6 MB.
+Total: 4.440500 ms (FindLiveObjects: 0.603600 ms CreateObjectMapping: 0.273400 ms MarkObjects: 3.290200 ms  DeleteObjects: 0.271500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:graphics/normal-map-encoding: 02000000000000000000000000000000 -> 01000000000000000000000000000000
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1704.696502 seconds.
+  path: Assets/UI/UIpack/Font/kenvector_future_thin SDF.asset
+  artifactKey: Guid(ea891402bf3721641836c799e587448f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UIpack/Font/kenvector_future_thin SDF.asset using Guid(ea891402bf3721641836c799e587448f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.MaterialEditor:GetPreviewRendererUtility ()
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+ -> (artifact id: '146069e224bfed03ddf23d36ae67afdf') in 0.173876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 628.647524 seconds.
+  path: Assets/UI/UIpack/Font/kenvector_future SDF.asset
+  artifactKey: Guid(153332a99b7c1d348bf24e4a1aad3c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UIpack/Font/kenvector_future SDF.asset using Guid(153332a99b7c1d348bf24e4a1aad3c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.MaterialEditor:GetPreviewRendererUtility ()
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+ -> (artifact id: '91000fef8e65018e86281bcd79c8221b') in 0.061266 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005156 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.071 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1072ms)
+		BeginReloadAssembly (127ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (850ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (193ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (434ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (331ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (28ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.97 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2392 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (1.3 MB). Loaded Objects now: 4098.
+Memory consumption went from 290.3 MB to 289.1 MB.
+Total: 4.356000 ms (FindLiveObjects: 0.508600 ms CreateObjectMapping: 0.300700 ms MarkObjects: 3.272200 ms  DeleteObjects: 0.272600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:graphics/normal-map-encoding: 02000000000000000000000000000000 -> 01000000000000000000000000000000
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005240 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.047 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1048ms)
+		BeginReloadAssembly (133ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (821ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (191ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (423ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (325ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (28ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.05 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2390 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (1.3 MB). Loaded Objects now: 4101.
+Memory consumption went from 290.3 MB to 289.0 MB.
+Total: 3.620700 ms (FindLiveObjects: 0.411700 ms CreateObjectMapping: 0.208100 ms MarkObjects: 2.734100 ms  DeleteObjects: 0.265500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:graphics/normal-map-encoding: 02000000000000000000000000000000 -> 01000000000000000000000000000000
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006240 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.055 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1056ms)
+		BeginReloadAssembly (129ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (833ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (194ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (428ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (330ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.25 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2390 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (1.3 MB). Loaded Objects now: 4104.
+Memory consumption went from 290.4 MB to 289.1 MB.
+Total: 3.771200 ms (FindLiveObjects: 0.535600 ms CreateObjectMapping: 0.381600 ms MarkObjects: 2.635600 ms  DeleteObjects: 0.217100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:graphics/normal-map-encoding: 02000000000000000000000000000000 -> 01000000000000000000000000000000
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005375 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.062 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1063ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (838ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (195ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (426ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (327ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (27ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.03 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2390 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (1.3 MB). Loaded Objects now: 4107.
+Memory consumption went from 290.4 MB to 289.1 MB.
+Total: 4.559400 ms (FindLiveObjects: 0.671500 ms CreateObjectMapping: 0.415800 ms MarkObjects: 3.248700 ms  DeleteObjects: 0.221400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:graphics/normal-map-encoding: 02000000000000000000000000000000 -> 01000000000000000000000000000000
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005212 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.052 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1053ms)
+		BeginReloadAssembly (124ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (837ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (194ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (424ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (325ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (30ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.92 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2390 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (1.3 MB). Loaded Objects now: 4110.
+Memory consumption went from 290.5 MB to 289.2 MB.
+Total: 4.270600 ms (FindLiveObjects: 0.389900 ms CreateObjectMapping: 0.200300 ms MarkObjects: 3.463100 ms  DeleteObjects: 0.215900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:graphics/normal-map-encoding: 02000000000000000000000000000000 -> 01000000000000000000000000000000
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005797 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.087 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1088ms)
+		BeginReloadAssembly (130ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (864ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (193ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (439ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (335ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.98 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2390 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (1.3 MB). Loaded Objects now: 4113.
+Memory consumption went from 290.5 MB to 289.2 MB.
+Total: 4.644200 ms (FindLiveObjects: 0.481400 ms CreateObjectMapping: 0.203000 ms MarkObjects: 3.658200 ms  DeleteObjects: 0.299700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:graphics/normal-map-encoding: 02000000000000000000000000000000 -> 01000000000000000000000000000000
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 433.507850 seconds.
+  path: Assets/Animated Fantasy Polygon Chest/Texture/Fantasy_Polygon_Chest_Texture_01.png
+  artifactKey: Guid(83ecfd78ea611854fbac7d0127c17e00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated Fantasy Polygon Chest/Texture/Fantasy_Polygon_Chest_Texture_01.png using Guid(83ecfd78ea611854fbac7d0127c17e00) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+ -> (artifact id: 'be69eef11773b24219958cd0251b481f') in 0.083457 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Animated Fantasy Polygon Chest/Texture/Fantasy_Polygon_Chest_Texture_01_Emission.png
+  artifactKey: Guid(28f8c2b8b5ef57c438eb366413f78f68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animated Fantasy Polygon Chest/Texture/Fantasy_Polygon_Chest_Texture_01_Emission.png using Guid(28f8c2b8b5ef57c438eb366413f78f68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+ -> (artifact id: '470c7b0cc1d06c957e314a0f1faa4e5c') in 0.024976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.331443 seconds.
+  path: Assets/Assets/Scenes/PersistentScene.unity
+  artifactKey: Guid(5c02264c5086dc44bb1eefdce32c688a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Scenes/PersistentScene.unity using Guid(5c02264c5086dc44bb1eefdce32c688a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7547f7a0496dd43f4e326914f796f775') in 0.008633 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005607 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.121 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1123ms)
+		BeginReloadAssembly (136ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (894ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (191ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (426ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (326ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (29ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.93 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2392 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (1.3 MB). Loaded Objects now: 4146.
+Memory consumption went from 292.7 MB to 291.4 MB.
+Total: 4.364400 ms (FindLiveObjects: 0.414000 ms CreateObjectMapping: 0.199600 ms MarkObjects: 3.498000 ms  DeleteObjects: 0.251000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:graphics/normal-map-encoding: 02000000000000000000000000000000 -> 01000000000000000000000000000000
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 72.023784 seconds.
+  path: Assets/Assets/Scenes/MainScene.unity
+  artifactKey: Guid(2826cf2612d40af428a2671527434eca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Scenes/MainScene.unity using Guid(2826cf2612d40af428a2671527434eca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40504def454cc70da6d3a94bd68b5cd2') in 0.022730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 451.233198 seconds.
+  path: Assets/UI/UIpack/Font/kenvector_future SDF.asset
+  artifactKey: Guid(153332a99b7c1d348bf24e4a1aad3c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UIpack/Font/kenvector_future SDF.asset using Guid(153332a99b7c1d348bf24e4a1aad3c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.MaterialEditor:GetPreviewRendererUtility ()
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+ -> (artifact id: '22d39088dc30c586c55543a6f4211878') in 0.137157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/UI/UIpack/Font/kenvector_future_thin SDF.asset
+  artifactKey: Guid(ea891402bf3721641836c799e587448f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI/UIpack/Font/kenvector_future_thin SDF.asset using Guid(ea891402bf3721641836c799e587448f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.MaterialEditor:GetPreviewRendererUtility ()
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+Unable to allocate new scene culling mask
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene (bool)
+UnityEditor.SceneManagement.EditorSceneManager:NewPreviewScene ()
+UnityEditor.PreviewScene:.ctor (string)
+UnityEditor.PreviewRenderUtility:.ctor ()
+UnityEditor.Texture3DPreview:InitPreviewUtility ()
+UnityEditor.Texture3DPreview:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Texture3DPreview> ()
+UnityEditor.TextureInspector:OnEnable ()
+UnityEditor.Editor:CreateEditorWithContext (UnityEngine.Object[],UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object,System.Type)
+UnityEditor.Editor:CreateEditor (UnityEngine.Object)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[C:\buildslave\unity\build\Editor\Src\SceneManager\EditorSceneManager.cpp line 680]
+
+ -> (artifact id: '7cb4b98ba3f09e18dbf9f2cb8378a266') in 0.063179 seconds 

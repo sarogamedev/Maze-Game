@@ -67,3 +67,19 @@ The following packages were updated:
   com.unity.postprocessing from version 3.0.3 to 3.1.1
   com.unity.test-framework from version 1.1.24 to 1.1.27
   com.unity.timeline from version 1.4.8 to 1.5.5
+
+=== Sat Mar  5 21:04:43 2022
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.animation.rigging from version 1.0.3 to 1.1.1
+  com.unity.collab-proxy from version 1.5.7 to 1.15.7
+  com.unity.ide.rider from version 3.0.7 to 3.0.9
+  com.unity.ide.visualstudio from version 2.0.11 to 2.0.12
+  com.unity.ide.vscode from version 1.2.3 to 1.2.4
+  com.unity.postprocessing from version 3.1.1 to 3.2.0
+  com.unity.recorder from version 2.5.5 to 3.0.3
+  com.unity.test-framework from version 1.1.27 to 1.1.29
+  com.unity.timeline from version 1.5.6 to 1.6.3
