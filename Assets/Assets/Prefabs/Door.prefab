@@ -87,10 +87,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: walln Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5317403451857493754, guid: 3771be2dc6298874e9c63b5950df2018, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5966084458045603631, guid: 3771be2dc6298874e9c63b5950df2018, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 313e9f38bbac9ef47bbc5cd563e914f1, type: 2}
+      objectReference: {fileID: 2100000, guid: 94b572779df29774791ab9d0e797a072, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3771be2dc6298874e9c63b5950df2018, type: 3}
 --- !u!4 &4058554555101006532 stripped

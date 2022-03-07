@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &151486175065071630
 RectTransform:
   m_ObjectHideFlags: 0
@@ -103,7 +103,6 @@ GameObject:
   - component: {fileID: 151486176124759212}
   - component: {fileID: 151486176124759210}
   - component: {fileID: 151486176124759211}
-  - component: {fileID: 7812899931947696228}
   m_Layer: 5
   m_Name: BackDrop
   m_TagString: Untagged
@@ -120,7 +119,7 @@ RectTransform:
   m_GameObject: {fileID: 151486176124759213}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 151486175492729723}
@@ -159,7 +158,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 1af7ff7a209b19642abf272e9a021a36, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -169,21 +168,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7812899931947696228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151486176124759213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
-  m_EffectDistance: {x: 3, y: -3}
-  m_UseGraphicAlpha: 1
 --- !u!1 &151486176258662976
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,6 +181,7 @@ GameObject:
   - component: {fileID: 151486176258662988}
   - component: {fileID: 151486176258662989}
   - component: {fileID: 151486176258662990}
+  - component: {fileID: 45576926}
   m_Layer: 5
   m_Name: x
   m_TagString: Untagged
@@ -345,6 +330,20 @@ MonoBehaviour:
   duration: 0.5
   easeType: 0
   scale: {x: 1, y: 1, z: 1}
+--- !u!114 &45576926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151486176258662976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4e66dd50a63f64a8a64fcb9c331c7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  from: {x: 1, y: 1, z: 1}
+  to: {x: 0.95, y: 0.95, z: 0.95}
 --- !u!1 &2274825597459475413
 GameObject:
   m_ObjectHideFlags: 0

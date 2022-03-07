@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Unity.Mathematics;
+using UnityEngine;
 
 namespace Assets.Scripts
 {
@@ -10,9 +11,11 @@ namespace Assets.Scripts
         public Animator animator;
     
         private Vector3 turnSmooth;
+        private Vector3 movement;
 
         private float horizontal;
         private float vertical;
+        private Transform player;
         public readonly int IsRunning = Animator.StringToHash("isRunning");
 
 
@@ -21,6 +24,7 @@ namespace Assets.Scripts
             GameObject obj = GameObject.FindWithTag("VirtualJoystick");
             joystick = obj.GetComponent<Joystick>();
             rb = GetComponent<Rigidbody>();
+            player = GetComponent<Transform>();
             animator = GetComponent<Animator>();
         }
 
@@ -31,44 +35,48 @@ namespace Assets.Scripts
             turnSmooth.z = joystick.Direction.y;
             horizontal = joystick.Horizontal;
             vertical = joystick.Vertical;
+
+            if (horizontal != 0 || vertical != 0)
+            {
+                animator.SetBool(IsRunning, true);
+                player.rotation = Quaternion.LookRotation(turnSmooth, player.up);
+            }
+            else
+            {
+                animator.SetBool((IsRunning), false);
+            }
         }
 
         private void FixedUpdate()
         {
-            if (vertical == 0 && horizontal == 0)
-            {
-                animator.SetBool(IsRunning, false);
-            }
-        
-            if (horizontal == 0 || vertical == 0) return;
-
-            animator.SetBool(IsRunning, true);
-        
+            var mag = smoothMovement * Time.fixedDeltaTime;
+            
             if (horizontal != 0)
             {
-                HorizontalMovement();
+                HorizontalMovement(mag);
             }
-
+            
             if (vertical != 0)
             {
-                VerticalMovement();
+                VerticalMovement(mag);
             }
         }
 
-        private void HorizontalMovement()
+        private void Move()
         {
-            var mag = smoothMovement * Time.fixedDeltaTime;
-        
-            rb.transform.rotation = Quaternion.LookRotation(turnSmooth, rb.transform.up);
-            rb.transform.Translate (Vector3.right * (horizontal * mag), Space.World);
+            
         }
-
-        private void VerticalMovement()
+        
+        private void HorizontalMovement(float mag)
         {
-            var mag = smoothMovement * Time.fixedDeltaTime;
-
-            rb.transform.rotation = Quaternion.LookRotation(turnSmooth, rb.transform.up);
-            rb.transform.Translate (Vector3.forward * (vertical * mag), Space.World);
+            //player.rotation = Quaternion.LookRotation(turnSmooth, player.up);
+            player.Translate (Vector3.right * (horizontal * mag), Space.World);
+        }
+        
+        private void VerticalMovement(float mag)
+        {
+            //player.rotation = Quaternion.LookRotation(turnSmooth, player.up);
+            player.Translate (Vector3.forward * (vertical * mag), Space.World);
         }
     }
 }

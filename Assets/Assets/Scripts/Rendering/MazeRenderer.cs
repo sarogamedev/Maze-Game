@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Unity.Mathematics;
+using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Assets.Scripts
 {
@@ -12,6 +14,7 @@ namespace Assets.Scripts
 		[SerializeField] private float scaleFix;
 		[SerializeField] private float mapCamSize;
 		[SerializeField, Range(0, 10)] private int doorProbability;
+		[SerializeField] private float groundMaterialTilingConstant;
 
 		[SerializeField] private Transform wallPrefab;
 		[SerializeField] private Transform floorPrefab;
@@ -22,6 +25,8 @@ namespace Assets.Scripts
 		
 		[SerializeField] private GameObject batchRoot;
 		[SerializeField] private GameObject doorRoot;
+
+		[SerializeField] private Material groundMaterial;
 		
 		private GameManager gm;
 
@@ -64,7 +69,7 @@ namespace Assets.Scripts
 							var topWall = Instantiate(wallPrefab, batchRoot.transform);
 							topWall.position = position + new Vector3(0, 0, size);
 							var localScale = topWall.localScale;
-							localScale = new Vector3(scaleFix, localScale.y, localScale.z);
+							localScale = new Vector3(scaleFix, localScale.y, localScale.z + 0.01f);
 							topWall.localScale = localScale;
 						}
 						else if(random >= doorProbability - 1 && j < height - 1)
@@ -82,7 +87,7 @@ namespace Assets.Scripts
 							leftWall.position = position + new Vector3(-size, 0, 0);
 							leftWall.eulerAngles = new Vector3(0, 0, 90);
 							var localScale = leftWall.localScale;
-							localScale = new Vector3(scaleFix, localScale.y, localScale.z);
+							localScale = new Vector3(scaleFix + 0.005f, localScale.y, localScale.z);
 							leftWall.localScale = localScale;
 						}
 						else if(random >= doorProbability - 1)
@@ -101,7 +106,7 @@ namespace Assets.Scripts
 							rightWall.position = position + new Vector3(size, 0, 0);
 							rightWall.eulerAngles = new Vector3(0, 0, 90);
 							var localScale = rightWall.localScale;
-							localScale = new Vector3(scaleFix, localScale.y, localScale.z);
+							localScale = new Vector3(scaleFix + 0.005f, localScale.y, localScale.z);
 							rightWall.localScale = localScale;
 						}
 					}
@@ -112,11 +117,13 @@ namespace Assets.Scripts
 						var topWall = Instantiate(wallPrefab, batchRoot.transform);
 						topWall.position = position + new Vector3(0, 0, -size);
 						var localScale = topWall.localScale;
-						localScale = new Vector3(scaleFix, localScale.y, localScale.z);
+						localScale = new Vector3(scaleFix, localScale.y, localScale.z + 0.01f);
 						topWall.localScale = localScale;
 					}
 				}
 			}
+			
+			//batchRoot.GetComponent<CombineMeshes>().Combine();
 			StaticBatchingUtility.Combine(batchRoot);
 			GenerateLevelAssets();
 		}
@@ -129,7 +136,10 @@ namespace Assets.Scripts
 			pos = new Vector3(pos.x, -0.5f, pos.z);
 			floor.position = pos;
 			floor.localScale = new Vector3(width, 1, height);
-		
+
+			var max = math.max(width, height);
+			groundMaterial.mainTextureScale = new Vector2(max * groundMaterialTilingConstant, max * groundMaterialTilingConstant);
+			
 			playerPos.x = -width/2;
 			playerPos.z = -height/2;
 			playerPos.y = yCorrection;

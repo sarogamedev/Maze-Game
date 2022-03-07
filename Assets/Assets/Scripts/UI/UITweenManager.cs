@@ -11,7 +11,7 @@ namespace Assets.Scripts
 		private void OnEnable()
 		{
 			transform.localScale = Vector3.zero;
-			LeanTween.scale(gameObject, scale, duration).setEase(easeType);
+			LeanTween.scale(gameObject, scale, duration).setEase(easeType).setIgnoreTimeScale(true);
 		}
 	}
 }

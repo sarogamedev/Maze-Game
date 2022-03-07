@@ -53,7 +53,7 @@ namespace Assets.Scripts
 
 		public void CustomSettingsToggle()
 		{
-			if(!gm.isCustomMaze) return;
+			//if(!gm.isCustomMaze) return;
 			gm.showMapCustom = showMap.isOn;
 			gm.showPathCustom = showPath.isOn;
 		}
