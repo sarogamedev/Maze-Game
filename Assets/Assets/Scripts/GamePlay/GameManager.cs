@@ -12,10 +12,11 @@ namespace Assets.Scripts
 	public class GameManager : MonoBehaviour
 	{
 	
-		[SerializeField] private GameObject AI;
-		[SerializeField] private float showPathCoolDownTime;
-		[SerializeField] private GameObject loadScreen;
-		public LayerMask gridObstacles;
+		[Header("Global Data: "), Space]
+		[Tooltip("AI that assists the player."), SerializeField] private GameObject AI;
+		[Tooltip("Time the player needs to wait for using AI assistance."), SerializeField] private float showPathCoolDownTime;
+		[Tooltip("Showed when the scene is loading."), SerializeField] private GameObject loadScreen;
+		[Tooltip("Used as obstacles for path finding.")] public LayerMask gridObstacles;
 
 		[HideInInspector] public int width;
 		[HideInInspector] public int height;
@@ -101,7 +102,7 @@ namespace Assets.Scripts
 				GridGraph gg = data.AddGraph(typeof(GridGraph)) as GridGraph;
 
 				// Setup a grid graph with some values
-				float nodeSize = 0.2f;
+				float nodeSize = 0.4f;
 
 				var center = new Vector3();
 
@@ -128,7 +129,7 @@ namespace Assets.Scripts
 				gg.center = center;
 
 				// Updates internal size from the above values
-				gg.SetDimensions(width * 5, height * 5, nodeSize);
+				gg.SetDimensions(width * 5/2, height * 5/2, nodeSize);
 				gg.collision.heightMask = gg.collision.heightMask ^ (1 << LayerMask.NameToLayer("Obstacles"));
 				gg.collision.mask = gridObstacles;
 

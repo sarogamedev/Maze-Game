@@ -290,6 +290,10 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3712312135627861284, guid: e07f2228f73e7f74c9f6773edcf33e5e, type: 3}
+      propertyPath: renderSphereRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3712312135627861284, guid: e07f2228f73e7f74c9f6773edcf33e5e, type: 3}
       propertyPath: gridObstacles.m_Bits
       value: 128
       objectReference: {fileID: 0}

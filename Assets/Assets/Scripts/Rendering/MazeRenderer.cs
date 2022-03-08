@@ -1,4 +1,5 @@
 ﻿using Unity.Mathematics;
+using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -124,7 +125,8 @@ namespace Assets.Scripts
 			}
 			
 			//batchRoot.GetComponent<CombineMeshes>().Combine();
-			StaticBatchingUtility.Combine(batchRoot);
+			//StaticBatchingUtility.Combine(batchRoot);
+			//StaticOcclusionCulling.Compute();
 			GenerateLevelAssets();
 		}
 		

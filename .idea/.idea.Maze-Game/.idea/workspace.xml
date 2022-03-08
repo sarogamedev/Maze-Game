@@ -11,8 +11,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Assets/Scripts/Rendering/CombineMeshes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.29/UnityEditor.TestRunner/TestRun/Tasks/LegacyPlayModeRunTask.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.6.0/Runtime/BurstString.Float.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5406A456-CF73-4443-B3D0-2A7D123287F1/b9/9ac8eeae/Void.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Assets/Scripts/UI/ButtonClick.cs" root0="FORCE_HIGHLIGHTING" />
@@ -33,15 +31,20 @@
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/CountDownTimer.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/Mechanics/CountDownTimer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/GamePlay/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/Mechanics/ChestTrigger.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/MazeGenerator/MazeRenderer.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/Rendering/CombineMeshes.cs" />
-      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/Rendering/MazeRenderer.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/Movement/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/UI/UI.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/UI/UITweenManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/UI/ButtonClick.cs" />
+      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/Rendering/MazeRenderer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/Rendering/RenderOptimization.cs" />
+      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/GamePlay/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/InstantOC/Standard Assets/Utility/SimpleActivatorMenu.cs" />
+      <option value="$PROJECT_DIR$/Assets/InstantOC/Standard Assets/Utility/ForcedReset.cs" />
+      <option value="$PROJECT_DIR$/Assets/InstantOC/Standard Assets/Utility/FPSCounter.cs" />
+      <option value="$PROJECT_DIR$/Assets/InstantOC/Editor/CrossPlatformInput/CrossPlatformInputInitialize.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vUhgGl83ophtM1Ls8qLTbbA5Fg" />
@@ -117,6 +120,11 @@
       <workItem from="1646559266149" duration="2185000" />
       <workItem from="1646639803398" duration="2394000" />
       <workItem from="1646646482191" duration="9845000" />
+      <workItem from="1646716871124" duration="236000" />
+      <workItem from="1646717366879" duration="1395000" />
+      <workItem from="1646722055462" duration="257000" />
+      <workItem from="1646741328761" duration="5287000" />
+      <workItem from="1646750014586" duration="1373000" />
     </task>
     <servers />
   </component>
