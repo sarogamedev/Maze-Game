@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3eec7fbfe1993b4dad38a81891a4415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1248001319904890143}
+  target: {fileID: 6395600664487349852}
   smoothSpeed: 2
   offset: {x: 0, y: 3, z: -2}
 --- !u!114 &1978440782406459379
@@ -225,6 +225,10 @@ PrefabInstance:
     - target: {fileID: 1572387997301675400, guid: f7f0a71d45f4a3a4ebe8e3d8d2ae9920, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1572387997301675400, guid: f7f0a71d45f4a3a4ebe8e3d8d2ae9920, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1572387997301675400, guid: f7f0a71d45f4a3a4ebe8e3d8d2ae9920, type: 3}
       propertyPath: m_TagString
@@ -443,7 +447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1599834806993438423, guid: 8e3f3b13c0c634b448d4c69ea03c8ec0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1599834806993438423, guid: 8e3f3b13c0c634b448d4c69ea03c8ec0, type: 3}
       propertyPath: m_TagString

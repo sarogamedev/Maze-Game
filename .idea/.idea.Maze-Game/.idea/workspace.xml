@@ -37,7 +37,6 @@
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/Movement/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/UI/UI.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/UI/UITweenManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/UI/ButtonClick.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/Rendering/MazeRenderer.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/Rendering/RenderOptimization.cs" />
       <option value="$PROJECT_DIR$/Assets/Assets/Scripts/GamePlay/GameManager.cs" />
@@ -45,6 +44,7 @@
       <option value="$PROJECT_DIR$/Assets/InstantOC/Standard Assets/Utility/ForcedReset.cs" />
       <option value="$PROJECT_DIR$/Assets/InstantOC/Standard Assets/Utility/FPSCounter.cs" />
       <option value="$PROJECT_DIR$/Assets/InstantOC/Editor/CrossPlatformInput/CrossPlatformInputInitialize.cs" />
+      <option value="$PROJECT_DIR$/Assets/Assets/Scripts/UI/ButtonClick.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vUhgGl83ophtM1Ls8qLTbbA5Fg" />
@@ -125,6 +125,7 @@
       <workItem from="1646722055462" duration="257000" />
       <workItem from="1646741328761" duration="5287000" />
       <workItem from="1646750014586" duration="1373000" />
+      <workItem from="1647137563279" duration="1697000" />
     </task>
     <servers />
   </component>

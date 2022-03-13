@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Button))]
@@ -12,9 +13,11 @@ public class ButtonClick : MonoBehaviour
     {
         GetComponent<Button>().onClick.AddListener(Scale);
     }
+
+    
     
     private void Scale()
     {
-        LeanTween.scale(gameObject, new Vector3(0.9f, 0.9f, 0.9f), 0.02f).setEaseInElastic().setLoopPingPong(1).setIgnoreTimeScale(true);
+        LeanTween.scale(gameObject, new Vector3(1.1f, 1.1f, 1.1f), 0.02f).setEaseInElastic().setLoopPingPong(1).setIgnoreTimeScale(true);
     }
 }
