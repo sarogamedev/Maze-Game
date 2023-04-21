@@ -1,2 +1,3 @@
 # Maze-Game
-A android game
+A android game built using unity.
+This game uses recursive backtracking algorithm to generate mazes.
